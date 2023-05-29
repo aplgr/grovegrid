@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{TITLE}}</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      margin: 0;
+      background: #0b0e11;
+      color: #eaeaea;
+    }
+
+    header {
+      padding: 14px 16px;
+      border-bottom: 1px solid #1a1f24;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .title {
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+
+    .controls {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    select,
+    input[type="range"] {
+      background: #12161b;
+      color: #eaeaea;
+      border: 1px solid #1f252b;
+      border-radius: 8px;
+      padding: 6px 8px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 12px;
+      opacity: .9;
+    }
+
+    .swatch {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      border-radius: 3px;
+      border: 1px solid #111;
+    }
+
+    .grad {
+      width: 80px;
+      height: 10px;
+      border-radius: 3px;
+      border: 1px solid #111;
+      background: linear-gradient(90deg, #d73027, #fdae61, #fee08b, #a6d96a, #1a9850);
+    }
+
+    #chart {
+      width: 100%;
+      height: calc(100vh - 70px);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      right: 14px;
+      font-size: 12px;
+      opacity: .6;
+    }
+
+    button {
+      background: #12161b;
+      color: #eaeaea;
+      border: 1px solid #1f252b;
+      border-radius: 8px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: #2c343b;
+    }
+  </style>
+</head>
+
+<body x-data="heatmapApp()">
+  <header>
+    <div class="title">{{TITLE}}</div>
+
+    <div class="legend" x-data x-init="(()=>{
+      // gradient colors are dynamic; we set them in JS later
+    })()">
+      <span class="swatch" style="background:#222"></span> <span>no data</span>
+      <span class="swatch" style="background:#555"></span> <span>0</span>
+      <span class="grad" id="legend-grad"></span> <span id="legend-value">value ↑</span>
+    </div>
+
+    <div class="controls">
+      <button @click="prev()">⟨</button>
+      <select x-model="month" @change="update()">
+        <template x-for="m in months" :key="m">
+          <option x-text="m"></option>
+        </template>
+      </select>
+      <button @click="next()">⟩</button>
+
+      <input type="range" :min="0" :max="months.length-1" step="1" x-model.number="slider"
+        @input="month = months[slider]; update()" style="width:220px">
+    </div>
+  </header>
+
+  <div id="chart"></div>
+  <div class="footer" x-text="`${labels.size}: ${meta.size_min} – ${meta.size_max} | ${labels.value}`"></div>
+
+  <script id="payload" type="application/json">{{INLINE_JSON}}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <script>
+    function heatmapApp() {
+      const inline = JSON.parse(document.getElementById('payload').textContent);
+      const meta = inline.meta;
+      const datasets = inline.datasets;
+      const months = meta.months;
+      const labels = meta.labels || { x: "X", y: "Y", value: "Value", size: "Size", extras: [] };
+
+      let chart;
+
+      // apply dynamic gradient colors if provided
+      (function initLegendGradient() {
+        const gradEl = document.getElementById("legend-grad");
+        const g = (meta.grad_colors || []);
+        if (gradEl && g.length) {
+          gradEl.style.background = `linear-gradient(90deg, ${g.join(",")})`;
+        }
+        const lv = document.getElementById("legend-value");
+        if (lv) lv.textContent = (labels.value || "Value") + " ↑";
+      })();
+
+      function categories(n) {
+        return Array.from({ length: n }, (_, i) => (i + 1).toString());
+      }
+
+      function buildPoints(ds) {
+        // Build a dense raster of points with [x-1, y-1, value, size] and carry extras object
+        const map = new Map();
+        (ds.points || []).forEach(p => { map.set(p.x + '-' + p.y, p); });
+        const out = [];
+        for (let x = 1; x <= meta.x_max; x++) {
+          for (let y = 1; y <= meta.y_max; y++) {
+            const key = x + '-' + y;
+            const p = map.get(key);
+            const value = p ? Number(p.value) : -1;
+            const size = p ? Number(p.size) : 0;
+            out.push({
+              id: key,
+              value: [x - 1, y - 1, value, size],
+              extras: p ? (p.extras || {}) : {}
+            });
+          }
+        }
+        return out;
+      }
+
+      function buildPieces(minPos, maxVal, gradColors, zeroColor, noDataColor) {
+        const pieces = [
+          { value: -1, label: 'no data', color: noDataColor },
+          { value: 0, label: '0', color: zeroColor }
+        ];
+        if (maxVal > 0 && minPos >= 0 && gradColors && gradColors.length > 0) {
+          const bins = gradColors.length;
+          const lo = (minPos > 0) ? minPos : 0.00001;
+          const step = (maxVal - lo) / bins || 1;
+          let start = lo;
+          for (let i = 0; i < bins; i++) {
+            const end = (i === bins - 1) ? maxVal : (lo + step * (i + 1));
+            const color = gradColors[i];
+            pieces.push({ gt: start - 1e-12, lte: end + 1e-12, color: color });
+            start = end;
+          }
+        }
+        return pieces;
+      }
+
+      function buildOption(monthKey) {
+        const ds = datasets[monthKey];
+        const heat = (ds.heat || []).map(d => [d[0] - 1, d[1] - 1, Number(d[2])]);
+        const points = buildPoints(ds);
+        const pieces = buildPieces(meta.value_min_pos, meta.value_max, meta.grad_colors, meta.zero_color, meta.nodata_color);
+
+        return {
+          backgroundColor: '#0b0e11',
+          animationDurationUpdate: 250,
+          animationEasingUpdate: 'linear',
+          tooltip: {
+            trigger: 'item',
+            formatter: function (params) {
+              if (params.seriesType === 'heatmap') {
+                const z = Number(params.value[2]);
+                if (z < 0) return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>no data`;
+                if (z === 0) return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>${labels.value}: 0`;
+                return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>${labels.value}: ${z}`;
+              } else if (params.seriesType === 'scatter') {
+                const v = params.value;
+                const z = Number(v[2]);
+                const g = Number(params.data.value[3]);
+                const lines = [
+                  `${labels.x} ${v[0] + 1}, ${labels.y} ${v[1] + 1}`,
+                  (z < 0) ? `no data` : `${labels.value}: ${z}`,
+                  `${labels.size}: ${g}`
+                ];
+                // extras (ordered by labels.extras)
+                if (labels.extras && labels.extras.length) {
+                  for (const h of labels.extras) {
+                    const val = params.data.extras?.[h];
+                    if (val !== undefined && val !== "") {
+                      lines.push(`${h}: ${val}`);
+                    }
+                  }
+                }
+                return lines.join('<br/>');
+              }
+              return '';
+            }
+          },
+          grid: { left: 50, right: 20, top: 40, bottom: 40, containLabel: true },
+          xAxis: {
+            type: 'category',
+            data: categories(meta.x_max),
+            name: labels.x || 'X',
+            nameTextStyle: { color: '#9aa4ad' },
+            axisLine: { lineStyle: { color: '#44515c' } },
+            axisLabel: { color: '#cbd5dc' },
+            splitArea: { show: false },
+            splitLine: { show: false }
+          },
+          yAxis: {
+            type: 'category',
+            data: categories(meta.y_max),
+            name: labels.y || 'Y',
+            nameTextStyle: { color: '#9aa4ad' },
+            axisLine: { lineStyle: { color: '#44515c' } },
+            axisLabel: { color: '#cbd5dc' },
+            splitArea: { show: false },
+            splitLine: { show: false },
+            inverse: false
+          },
+          visualMap: [{
+            type: 'piecewise',
+            dimension: 2,
+            orient: 'horizontal',
+            right: 20,
+            top: 8,
+            show: false,
+            pieces: pieces,
+            seriesIndex: 0
+          }],
+          series: [
+            {
+              name: labels.value || 'Value',
+              type: 'heatmap',
+              data: heat,
+              animation: false,
+              label: { show: false },
+              itemStyle: { borderWidth: 1, borderColor: '#0b0e11' },
+              emphasis: { itemStyle: { shadowBlur: 3, shadowColor: 'rgba(255,255,255,.2)' } }
+            },
+            {
+              name: labels.size || 'Size',
+              type: 'scatter',
+              data: points,
+              animationDurationUpdate: 250,
+              animationEasingUpdate: 'linear',
+              symbolSize: function (val) {
+                const min = meta.size_min || 0;
+                const max = meta.size_max || 0;
+                if (max <= min) return 6;
+                const g = Number(val[3]);
+                const t = (g - min) / (max - min);
+                return Math.max(6, Math.min(28, 6 + t * 22));
+              },
+              itemStyle: { borderColor: '#000', borderWidth: 0.8 },
+              encode: { x: 0, y: 1 }
+            }
+          ]
+        };
+      }
+
+      return {
+        meta, months, labels,
+        month: months[0],
+        slider: 0,
+        init() {
+          chart = echarts.init(document.getElementById('chart'), null, { renderer: 'canvas' });
+          this.update();
+          window.addEventListener('resize', () => chart.resize());
+        },
+        update() {
+          const idx = this.months.indexOf(this.month);
+          this.slider = (idx >= 0 ? idx : 0);
+          chart.setOption(buildOption(this.month), false);
+        },
+        prev() { const i = Math.max(0, this.slider - 1); this.slider = i; this.month = this.months[i]; this.update(); },
+        next() { const i = Math.min(this.months.length - 1, this.slider + 1); this.slider = i; this.month = this.months[i]; this.update(); }
+      };
+    }
+  </script>
+</body>
+
+</html>

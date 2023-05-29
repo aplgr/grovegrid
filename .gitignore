@@ -1,0 +1,7 @@
+# Binaries
+*.out
+
+# Build artifacts
+/bin/
+/out/
+/build/
