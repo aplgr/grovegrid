@@ -1,11 +1,16 @@
 # GroveGrid
 
 [![Live demo](https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f)](https://aplgr.github.io/grovegrid/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?logo=go)](#)
+[![Release](https://img.shields.io/github/v/release/aplgr/grovegrid)](https://github.com/aplgr/grovegrid/releases)
 ![Status](https://img.shields.io/badge/status-alpha-orange)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/aplgr/grovegrid/issues)
 ![Scope](https://img.shields.io/badge/scope-personal%20tool-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/aplgr/grovegrid.svg)](https://pkg.go.dev/github.com/aplgr/grovegrid)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aplgr/grovegrid)](https://goreportcard.com/report/github.com/aplgr/grovegrid)
+[![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?logo=go)](#)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/aplgr/grovegrid/issues)
+
 
 **CSV → interactive heatmaps & timeline for tree rows** (Go CLI · Alpine.js · ECharts)
 
