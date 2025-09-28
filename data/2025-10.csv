@@ -1,0 +1,1180 @@
+row;position;condition;size;species;notes
+35;2;4;200;Cu;Neighbor's tree needs to be cut down (otherwise it will grow together)
+35;1;4;200;G;
+34;6;4;150;G;Old stock right next to it (Yvyra pyta)
+34;5;4;150;G;
+34;4;4;150;G;Old stock between 4 and 5 
+34;3;3;150;L;Old stock right next to it (Curupa'y)
+34;2;4;200;Cu;
+34;1;4;150;G;
+33;16;4;200;Ti;Old stock right next to it (Curupa'y)
+33;15;4;200;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+33;14;4;150;Cu;"Neighbor's tree needs to be cut down (otherwise it will grow together), Old stock right next to it (Paraiso)"
+33;13;4;200;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+33;12;4;200;Cu;
+33;11;4;200;Cu;
+33;10;3;10;L;
+33;9;4;150;G;
+33;8;3;100;L;
+33;7;4;200;Cu;
+33;6;3;10;G;
+33;5;3;50;L;
+33;4;3;50;G;
+33;3;4;200;Cu;
+33;2;3;10;L;
+33;1;4;200;Cu;
+32;21;4;100;G;
+32;20;4;150;G;
+32;19;4;200;G;
+32;18;3;150;Cu;
+32;17;3;150;L;P >200cm right next to it
+32;16;4;150;G;
+32;15;3;10;L;
+32;14;3;10;G;Old stock right next to it (Yvyra pyta)
+32;13;4;200;Cu;
+32;12;4;150;G;
+32;11;4;150;L;
+32;10;4;150;Cu;
+32;9;4;200;Cu;
+32;8;3;50;G;
+32;7;3;50;Cu;frost damage
+32;6;3;150;Cu;frost damage
+32;5;3;10;G;
+32;4;3;50;L;
+32;3;4;200;Cu;
+32;2;4;200;Cu;
+32;1;4;200;Cu;
+31;26;4;200;Cu;
+31;25;4;200;Cu;
+31;24;4;150;L;
+31;23;3;150;L;
+31;22;4;150;Cu;
+31;21;3;10;L;
+31;20;4;200;Cu;
+31;19;4;200;L;
+31;18;4;200;Cu;
+31;17;4;150;L;
+31;16;4;200;Cu;
+31;15;3;10;L;
+31;14;3;10;L;Old stock right next to it (Curupa'y)
+31;13;3;100;Cu;frost damage
+31;12;3;10;L;
+31;11;3;10;G;
+31;10;3;150;L;
+31;9;0;0;G;
+31;8;4;200;Cu;
+31;7;4;200;Cu;
+31;6;4;200;Cu;
+31;5;4;200;Cu;
+31;4;3;25;G;
+31;3;3;100;G;
+31;2;4;50;G;
+31;1;3;200;Cu;
+30;30;4;200;Cu;Neighbor's tree needs to be cut down (otherwise it will grow together)
+30;29;4;200;G;
+30;28;4;200;Cu;
+30;27;4;200;Cu;
+30;26;4;100;G;
+30;25;0;0;G;
+30;24;4;200;Cu;
+30;23;4;200;Cu;
+30;22;4;150;Y;Old stock (Yvyra pyta)
+30;21;0;0;Cu;
+30;20;4;200;Cu;
+30;19;4;200;Cu;
+30;18;1;100;Y;frost damage
+30;17;4;200;Y;
+30;16;2;100;Y;frost damage
+30;15;2;200;Cu;frost damage
+30;14;3;10;G;
+30;13;3;25;L;
+30;12;3;50;Cu;frost damage
+30;11;4;200;Cu;
+30;10;4;200;Cu;
+30;9;3;10;G;
+30;8;4;200;Cu;
+30;7;4;200;Cu;
+30;6;2;10;G;mini
+30;5;4;200;G;
+30;4;4;200;Cu;
+30;3;4;200;Cu;
+30;2;4;200;G;
+30;1;4;150;G;
+29;34;4;100;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+29;33;4;200;G;
+29;32;4;200;G;
+29;31;4;200;Cu;
+29;30;0;0;G;
+29;29;4;150;G;
+29;28;4;200;G;
+29;27;4;200;Cu;
+29;26;4;200;Cu;
+29;25;4;200;Cu;
+29;24;4;100;Y;
+29;23;2;10;Y;frost damage
+29;22;1;100;Y;frost damage
+29;21;4;200;Y;
+29;20;4;200;Cu;
+29;19;1;150;Y;frost damage
+29;18;3;10;G;
+29;17;4;25;L;frost damage
+29;16;4;200;Cu;
+29;15;4;200;Cu;
+29;14;4;200;Cu;
+29;13;4;200;Cu;
+29;12;3;10;G;frost damage
+29;11;3;150;Cu;
+29;10;2;10;G;
+29;9;3;25;G;
+29;8;3;25;G;
+29;7;4;150;Cu;
+29;6;4;200;Cu;
+29;5;4;150;G;
+29;4;4;200;G;
+29;3;4;200;Cu;
+29;2;4;200;Cu;Neighbor's tree needs to be cut down (otherwise it will grow together)
+29;1;4;200;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+28;35;3;200;Y;eaten away 
+28;34;4;200;Cu;
+28;33;4;200;G;
+28;32;4;150;G;
+28;31;4;200;G;
+28;30;4;200;L;
+28;29;4;200;Cu;Old stock (Curupa'y)
+28;28;4;200;L;
+28;27;4;25;L;
+28;26;0;0;Cu;
+28;25;2;200;Y;frost damage
+28;24;4;200;Cu;
+28;23;3;50;L;frost damage
+28;22;4;100;G;
+28;21;4;200;Cu;
+28;20;3;10;G;
+28;19;4;200;Cu;
+28;18;4;150;L;
+28;17;1;200;Y;frost damage
+28;16;3;25;P;frost damage
+28;15;1;150;Y;frost damage
+28;14;4;200;Cu;
+28;13;0;0;G;
+28;12;4;200;Cu;
+28;11;3;150;L;
+28;10;3;10;C;mini
+28;9;3;25;G;
+28;8;3;50;G;Old stock right next to it (Curupa'y)
+28;7;4;50;P;frost damage
+28;6;4;200;Y;
+28;5;3;150;L;
+28;4;4;100;G;
+28;3;4;200;L;
+28;2;4;200;Y;
+28;1;4;150;L;Old stock right next to it (Yvyra Pyta)
+27;36;4;150;G;
+27;35;4;150;G;
+27;34;4;200;Cu;
+27;33;4;200;Cu;
+27;32;4;25;G;
+27;31;4;200;G;
+27;30;4;200;L;
+27;29;4;200;Y;
+27;28;3;25;Ti;frost damage, Old stock right next to it (Yvyra Pyta) 
+27;27;3;50;Ti;frost damage
+27;26;4;200;Cu;Shrub next to it to be removed
+27;25;4;200;L;
+27;24;4;200;L;
+27;23;2;100;Y;frost damage
+27;22;3;25;G;
+27;21;4;200;Cu;
+27;20;4;200;Cu;
+27;19;4;25;P;frost damage
+27;18;4;200;L;
+27;17;2;25;P;frost damage
+27;16;4;100;G;
+27;15;3;50;Y;frost damage
+27;14;3;50;P;frost damage
+27;13;4;200;Y;
+27;12;4;200;L;
+27;11;3;100;Cu;
+27;10;3;150;Y;
+27;9;4;150;L;
+27;8;4;200;Y;
+27;7;3;25;P;frost damage
+27;6;4;150;L;
+27;5;4;100;G;
+27;4;4;50;P;frost damage
+27;3;4;200;Y;
+27;2;4;200;Cu;
+27;1;4;200;Y;
+26;36;4;200;Y;
+26;35;4;200;L;
+26;34;4;150;G;
+26;33;4;200;Y;Old stock (Yvyra pyta)
+26;32;4;200;Cu;
+26;31;4;100;G;
+26;30;3;25;L;frost damage
+26;29;3;25;G;frost damage
+26;28;4;200;Cu;Old stock right next to it (Yvyra pyta)
+26;27;4;200;L;
+26;26;3;25;P;frost damage
+26;25;4;200;L;
+26;24;4;200;Y;
+26;23;4;150;G;
+26;22;4;200;Cu;
+26;21;1;200;Y;frost damage
+26;20;4;200;Cu;
+26;19;4;150;L;
+26;18;2;200;Y;frost damage
+26;17;4;200;Cu;
+26;16;4;150;L;
+26;15;3;150;Y;frost damage
+26;14;2;200;Y;frost damage
+26;13;4;200;Cu;
+26;12;4;200;Y;
+26;11;4;200;L;
+26;10;4;200;Y;
+26;9;4;200;Cu;
+26;8;4;200;L;
+26;7;4;200;Y;
+26;6;2;50;P;frost damage
+26;5;4;150;C;frost damage
+26;4;4;50;P;frost damage
+26;3;4;200;Y;
+26;2;4;200;Ti;
+26;1;4;200;Cu;Old stock right next to it (Yvyra pyta)
+25;36;2;50;P;frost damage
+25;35;0;0;Cu;
+25;34;4;150;Ti;
+25;33;4;50;G;
+25;32;4;200;Cu;
+25;31;4;150;Cu;
+25;30;4;200;Cu;
+25;29;4;100;G;
+25;28;4;10;G;
+25;27;4;10;G;
+25;26;3;50;P;frost damage
+25;25;4;100;G;
+25;24;4;50;G;
+25;23;4;150;L;
+25;22;4;150;G;
+25;21;4;10;L;frost damage
+25;20;4;200;L;
+25;19;0;0;G;
+25;18;2;150;P;frost damage
+25;17;4;200;?;
+25;16;4;25;P;frost damage
+25;15;4;50;C;frost damage
+25;14;4;25;L;
+25;13;4;150;L;
+25;12;4;200;Ti;
+25;11;4;200;L;
+25;10;4;200;Cu;
+25;9;4;200;Cu;
+25;8;3;25;P;frost damage
+25;7;4;150;L;
+25;6;3;10;P;frost damage
+25;5;3;10;P;frost damage
+25;4;4;150;Cu;
+25;3;3;50;G;
+25;2;4;200;Y;
+25;1;4;200;L;
+24;36;4;200;Ti;
+24;35;4;150;L;
+24;34;3;50;Ti;frost damage
+24;33;3;150;L;
+24;32;3;25;P;frost damage
+24;31;3;10;Y;frost damage
+24;30;3;100;Cu;
+24;29;3;10;L;
+24;28;2;10;Y;frost damage
+24;27;4;150;G;
+24;26;4;25;L;frost damage
+24;25;4;200;Cu;
+24;24;4;50;L;frost damage
+24;23;0;0;P;missing 
+24;22;3;10;L;
+24;21;0;0;G;
+24;20;4;200;L;
+24;19;2;200;Y;frost damage
+24;18;4;200;L;
+24;17;3;10;P;
+24;16;2;150;Y;frost damage
+24;15;1;150;Y;frost damage
+24;14;3;150;L;
+24;13;3;25;P;frost damage
+24;12;3;150;G;
+24;11;3;25;P;frost damage
+24;10;4;10;G;frost damage
+24;9;2;150;Y;frost damage
+24;8;3;25;L;frost damage
+24;7;2;50;Y;frost damage
+24;6;2;25;Y;frost damage
+24;5;4;200;Cu;
+24;4;3;50;G;
+24;3;4;200;Ti;
+24;2;3;50;C;
+24;1;3;100;Y;
+23;37;4;200;L;
+23;36;4;200;L;
+23;35;4;200;Y;
+23;34;4;150;Y;
+23;33;4;200;Y;
+23;32;4;200;Y;Old stock (Yvyra pyta)
+23;31;2;100;Y;frost damage damage 
+23;30;3;150;L;
+23;29;0;0;G;
+23;28;3;200;Cu;
+23;27;4;50;G;
+23;26;2;50;Y;frost damage
+23;25;0;0;G;
+23;24;4;150;Cu;
+23;23;4;25;L;frost damage
+23;22;4;200;Cu;
+23;21;3;150;L;
+23;20;4;200;Cu;
+23;19;4;100;G;
+23;18;4;25;L;frost damage
+23;17;4;200;Cu;
+23;16;3;150;L;
+23;15;3;25;Ti;frost damage
+23;14;4;10;P;frost damage
+23;13;3;200;Y;
+23;12;3;150;Y;
+23;11;2;50;Y;frost damage
+23;10;3;100;L;
+23;9;3;10;Y;frost damage
+23;8;4;200;Cu;
+23;7;4;25;P;frost damage
+23;6;3;200;Y;
+23;5;4;200;Cu;
+23;4;4;200;Cu;
+23;3;4;150;Y;
+23;2;3;10;L;
+23;1;4;200;Y;
+22;36;4;200;Y;
+22;35;4;150;Y;
+22;34;4;150;Y;
+22;33;4;200;L;
+22;32;4;200;Y;
+22;31;4;200;Cu;
+22;30;2;10;Y;frost damage
+22;29;0;0;P;
+22;28;4;50;L;frost damage
+22;27;4;10;G;frost damage
+22;26;3;10;Y;frost damage
+22;25;1;25;Y;frost damage
+22;24;2;25;Y;frost damage
+22;23;4;50;L;frost damage
+22;22;4;25;L;frost damage
+22;21;4;10;G;frost damage
+22;20;3;10;G;frost damage
+22;19;3;50;L;frost damage
+22;18;2;50;Cu;frost damage
+22;17;3;100;L;
+22;16;0;0;P;missing 
+22;15;3;100;L;
+22;14;4;10;P;
+22;13;3;10;Y;frost damage
+22;12;4;150;Y;
+22;11;4;50;G;
+22;10;0;0;G;
+22;9;3;10;Y;frost damage
+22;8;3;50;L;
+22;7;3;150;Y;
+22;6;4;200;Cu;
+22;5;4;200;Cu;
+22;4;4;200;L;
+22;3;3;10;P;frost damage
+22;2;2;50;P;frost damage
+22;1;4;200;G;
+21;37;4;150;G;
+21;36;4;200;Cu;
+21;35;4;150;L;
+21;34;4;200;Y;
+21;33;0;0;G;
+21;32;1;50;Y;frost damage
+21;31;0;0;L;
+21;30;2;10;Y;frost damage
+21;29;0;0;G;
+21;28;2;10;Y;frost damage
+21;27;4;200;Cu;
+21;26;2;10;Y;frost damage
+21;25;4;200;Cu;
+21;24;3;10;G;
+21;23;4;200;Cu;
+21;22;4;200;Y;
+21;21;4;200;Cu;
+21;20;2;10;L;frost damage
+21;19;1;25;Y;
+21;18;4;10;G;
+21;17;4;25;L;frost damage
+21;16;2;10;Y;frost damage
+21;15;3;25;C;frost damage
+21;14;4;200;Cu;
+21;13;3;10;G;frost damage
+21;12;4;25;P;frost damage
+21;11;4;150;L;
+21;10;4;200;Cu;
+21;9;3;10;Y;frost damage
+21;8;3;100;G;
+21;7;4;200;Cu;
+21;6;4;150;L;
+21;5;3;50;P;frost damage
+21;4;4;200;Y;
+21;3;4;200;Cu;
+21;2;3;150;L;eaten away 
+21;1;2;100;Y;Cut down (1m shorter)
+20;37;4;200;Cu;
+20;36;4;200;U;
+20;35;4;200;Y;
+20;34;4;200;G;
+20;33;4;200;Y;
+20;32;4;200;L;
+20;31;4;10;C;frost damage
+20;30;4;200;Cu;
+20;29;0;0;Y;Old stock next to it (Curupa'y)
+20;28;4;150;L;
+20;27;3;10;Y;frost damage
+20;26;3;10;G;
+20;25;4;50;P;frost damage
+20;24;2;10;Y;frost damage
+20;23;0;0;G;
+20;22;0;0;Y;
+20;21;3;25;L;frost damage
+20;20;3;10;Y;frost damage
+20;19;4;10;P;frost damage
+20;18;1;100;Y;frost damage
+20;17;2;25;Y;frost damage
+20;16;4;10;P;frost damage
+20;15;2;50;Y;frost damage
+20;14;3;10;Y;frost damage
+20;13;3;10;P;
+20;12;4;100;L;frost damage
+20;11;3;10;G;frost damage
+20;10;3;10;Y;frost damage
+20;9;3;10;Y;frost damage
+20;8;0;0;P;missing 
+20;7;2;200;Y;frost damage
+20;6;1;100;L;
+20;5;3;200;Y;
+20;4;4;100;G;
+20;3;3;200;Y;
+20;2;3;50;G;frost damage
+20;1;4;200;Y;
+19;37;4;200;Cu;Tree next doorto it to be removed
+19;36;4;150;L;
+19;35;4;200;Y;
+19;34;4;200;Y;
+19;33;4;200;Y;
+19;32;4;200;G;
+19;31;0;0;L;
+19;30;4;200;Cu;
+19;29;1;150;Y;frost damage
+19;28;3;50;Ti;frost damage
+19;27;3;100;Y;frost damage
+19;26;3;25;P;frost damage
+19;25;3;50;Y;frost damage
+19;24;3;50;Y;frost damage
+19;23;1;200;Y;frost damage
+19;22;3;200;Y;frost damage
+19;21;2;100;Y;frost damage
+19;20;3;10;Cu;
+19;19;1;50;L;frost damage
+19;18;2;25;Y;frost damage
+19;17;2;25;Y;frost damage
+19;16;2;25;Y;frost damage
+19;15;0;0;Y;
+19;14;2;25;Y;frost damage
+19;13;3;10;P;
+19;12;4;100;G;
+19;11;4;200;Cu;
+19;10;0;0;G;
+19;9;2;100;U;frost damage
+19;8;4;100;G;
+19;7;3;10;G;
+19;6;4;150;Cu;
+19;5;3;10;L;
+19;4;3;10;P;Mini
+19;3;4;150;G;
+19;2;2;150;Cu;eaten away 
+19;1;1;50;L;eaten away 
+18;37;4;200;L;
+18;36;4;200;L;
+18;35;4;200;Ti;
+18;34;4;200;L;
+18;33;4;150;G;
+18;32;4;25;L;frost damage
+18;31;2;10;Y;frost damage
+18;30;3;10;Y;frost damage
+18;29;3;50;Y;frost damage
+18;28;3;25;L;frost damage
+18;27;4;25;P;frost damage
+18;26;4;200;Y;
+18;25;3;100;Y;frost damage
+18;24;4;150;Cu;
+18;23;3;50;P;frost damage
+18;22;3;50;P;frost damage
+18;21;3;50;L;frost damage
+18;20;3;50;Y;frost damage
+18;19;3;10;G;frost damage
+18;18;2;150;Y;frost damage
+18;17;3;10;G;
+18;16;3;25;L;frost damage
+18;15;3;25;L;frost damage
+18;14;2;100;Y;frost damage
+18;13;3;10;P;
+18;12;2;10;L;frost damage
+18;11;4;200;Cu;
+18;10;3;50;Ti;frost damage
+18;9;1;100;U;frost damage
+18;8;4;200;Cu;
+18;7;4;150;L;
+18;6;4;200;Y;
+18;5;4;200;Cu;
+18;4;4;200;Cu;
+18;3;3;10;G;
+18;2;4;200;Cu;
+18;1;2;50;L;
+17;37;3;25;P;frost damage
+17;36;4;25;L;frost damage
+17;35;4;200;Cu;
+17;34;4;200;Y;
+17;33;2;200;U;frost damage
+17;32;2;50;P;frost damage
+17;31;4;200;Y;
+17;30;2;50;L;frost damage, Old stock right next to it (Paraiso) 
+17;29;4;100;G;
+17;28;2;50;Y;frost damage
+17;27;3;50;G;
+17;26;3;50;P;frost damage
+17;25;0;0;Y;
+17;24;0;100;L;Stummel, drübergemäht 
+17;23;3;10;G;Mähschaden ?
+17;22;3;50;Y;frost damage
+17;21;4;10;P;frost damage
+17;20;4;150;G;
+17;19;4;50;L;frost damage
+17;18;4;200;Cu;
+17;17;4;10;G;frost damage
+17;16;2;25;Y;frost damage
+17;15;4;25;P;frost damage
+17;14;4;25;L;frost damage
+17;13;4;25;P;frost damage
+17;12;2;100;L;frost damage
+17;11;4;50;P;frost damage
+17;10;4;200;Cu;
+17;9;4;200;Cu;
+17;8;4;50;Ti;frost damage
+17;7;4;200;Cu;
+17;6;2;10;Y;frost damage
+17;5;3;25;G;
+17;4;3;200;Cu;
+17;3;3;25;G;
+17;2;4;50;G;
+17;1;4;200;Y;
+16;37;2;100;Y;frost damage
+16;36;3;25;P;frost damage
+16;35;3;150;Y;frost damage
+16;34;3;50;G;
+16;33;4;150;Cu;
+16;32;4;25;L;frost damage, Shrub next to it to be removed (Sapiangy)
+16;31;4;10;L;frost damage
+16;30;4;10;L;frost damage
+16;29;3;10;L;
+16;28;2;10;Y;frost damage
+16;27;4;10;L;frost damage
+16;26;3;100;L;Old stock right next to it
+16;25;2;200;U;frost damage
+16;24;3;50;Ti;frost damage
+16;23;3;10;P;
+16;22;3;10;G;frost damage
+16;21;3;10;L;frost damage
+16;20;4;200;Cu;
+16;19;3;10;G;frost damage
+16;18;4;10;G;frost damage
+16;17;4;50;P;frost damage
+16;16;3;25;Y;frost damage
+16;15;4;200;Cu;
+16;14;4;200;Cu;
+16;13;4;10;Y;frost damage
+16;12;3;25;C;frost damage
+16;11;3;10;G;frost damage
+16;10;2;200;U;frost damage
+16;9;3;10;G;frost damage
+16;8;3;25;P;frost damage
+16;7;2;50;Y;frost damage
+16;6;4;25;P;frost damage
+16;5;2;50;Y;frost damage
+16;4;4;100;L;
+16;3;4;200;Cu;
+16;2;3;25;G;
+16;1;3;50;G;
+15;37;4;200;Cu;Old stock right next to it (Curupa'y)
+15;36;2;25;Y;frost damage
+15;35;3;50;P;frost damage
+15;34;3;25;Y;frost damage
+15;33;4;25;P;frost damage
+15;32;3;25;G;frost damage
+15;31;3;100;Cu;frost damage
+15;30;4;100;Ti;The bush next to it has to go. Ti is growing into it.
+15;29;1;50;U;frost damage
+15;28;3;25;L;frost damage
+15;27;4;25;P;frost damage
+15;26;3;10;G;frost damage
+15;25;0;0;L;
+15;24;3;50;Cu;
+15;23;0;0;Y;
+15;22;0;0;G;
+15;21;3;100;Cu;Old stock right next to it (Yvyra pyta)
+15;20;3;10;G;frost damage
+15;19;3;10;L;
+15;18;4;10;P;
+15;17;4;200;Cu;
+15;16;3;10;G;frost damage
+15;15;4;10;L;
+15;14;4;25;L;frost damage
+15;13;4;10;G;frost damage
+15;12;4;25;L;frost damage
+15;11;3;10;Y;frost damage
+15;10;4;10;U;frost damage
+15;9;4;50;Ti;frost damage
+15;8;1;10;Y;frost damage
+15;7;0;0;G;missing 
+15;6;1;200;U;frost damage
+15;5;4;50;L;frost damage
+15;4;4;200;Cu;
+15;3;4;200;U;frost damage
+15;2;4;200;Ti;
+15;1;4;50;P;frost damage
+14;37;4;200;Y;
+14;36;2;50;Y;frost damage
+14;35;4;25;P;frost damage
+14;34;4;50;G;
+14;33;4;25;L;frost damage
+14;32;2;10;Y;
+14;31;2;200;Y;frost damage
+14;30;3;10;P;frost damage
+14;29;4;150;Y;
+14;28;3;25;U;frost damage
+14;27;4;10;G;frost damage
+14;26;2;10;Y;frost damage
+14;25;4;10;G;frost damage
+14;24;2;10;Y;frost damage
+14;23;2;10;Y;frost damage
+14;22;4;10;L;frost damage
+14;21;3;50;G;frost damage
+14;20;2;10;Y;frost damage
+14;19;1;10;Y;
+14;18;4;10;G;
+14;17;4;10;L;frost damage
+14;16;2;10;Y;frost damage
+14;15;3;10;G;
+14;14;2;10;Y;frost damage
+14;13;3;10;G;frost damage
+14;12;1;10;Y;frost damage
+14;11;4;25;L;frost damage
+14;10;3;200;Cu;
+14;9;4;10;L;frost damage
+14;8;4;50;G;
+14;7;3;50;Cu;frost damage
+14;6;4;10;G;
+14;5;4;200;Cu;
+14;4;2;10;U;frost damage
+14;3;3;50;Y;
+14;2;3;10;C;
+14;1;4;200;Cu;
+13;37;3;100;Y;
+13;36;0;0;Y;
+13;35;2;10;Y;frost damage damage 
+13;34;4;200;Cu;
+13;33;2;50;Y;frost damage damage 
+13;32;4;150;Cu;
+13;31;2;10;Y;
+13;30;1;10;U;frost damage damage, Old stock right next to it (Yvyra pyta)
+13;29;3;25;Cu;frost damage damage
+13;28;4;200;Y;
+13;27;2;100;Y;frost damage damage 
+13;26;3;10;P;
+13;25;4;10;G;frost damage damage 
+13;24;2;50;Y;frost damage damage
+13;23;3;150;L;frost damage damage 
+13;22;3;50;Cu;frost damage 
+13;21;3;10;Y;frost damage 
+13;20;3;10;G;frost damage 
+13;19;3;100;Cu;frost damage 
+13;18;2;10;Y;frost damage 
+13;17;1;150;Y;frost damage
+13;16;3;100;Cu;frost damage 
+13;15;3;25;P;frost damage 
+13;14;3;50;L;frost damage 
+13;13;1;50;Y;frost damage 
+13;12;3;10;P;
+13;11;1;100;Y;frost damage 
+13;10;4;10;P;frost damage 
+13;9;3;100;Cu;frost damage 
+13;8;3;10;Ti;frost damage 
+13;7;1;150;L;frost damage 
+13;6;4;200;Y;
+13;5;4;25;G;
+13;4;4;100;L;frost damage 
+13;3;3;10;Y;frost damage 
+13;2;3;25;P;
+13;1;4;150;Y;
+12;37;3;50;P;frost damage 
+12;36;0;0;L;
+12;35;3;50;G;
+12;34;3;10;Y;frost damage 
+12;33;3;150;Cu;
+12;32;3;25;G;
+12;31;0;0;P;
+12;30;4;150;Cu;Old stock right next to it (Yvyra pyta)
+12;29;3;25;G;
+12;28;3;10;L;frost damage 
+12;27;3;25;U;frost damage 
+12;26;3;10;L;frost damage 
+12;25;0;0;L;
+12;24;3;100;Cu;frost damage 
+12;23;2;10;Y;frost damage 
+12;22;3;10;P;frost damage 
+12;21;3;10;P;
+12;20;0;0;Y;
+12;19;3;10;P;frost damage 
+12;18;1;50;Y;frost damage 
+12;17;3;150;Cu;
+12;16;3;10;G;
+12;15;3;25;P;frost damage 
+12;14;3;50;Cu;frost damage 
+12;13;4;10;L;frost damage 
+12;12;0;0;Y;
+12;11;3;50;Cu;frost damage 
+12;10;3;10;L;
+12;9;3;10;P;frost damage 
+12;8;0;0;Y;
+12;7;3;10;Cu;frost damage 
+12;6;4;200;L;
+12;5;4;150;Y;
+12;4;3;10;G;
+12;3;2;10;G;
+12;2;3;10;G;
+12;1;2;200;L;eaten away 
+11;39;0;0;L;
+11;38;0;0;P;
+11;37;2;10;P;
+11;36;3;10;Y;frost damage 
+11;35;2;10;Y;frost damage 
+11;34;3;50;Cu;frost damage 
+11;33;3;25;G;
+11;32;0;0;Y;
+11;31;0;0;L;
+11;30;4;10;P;frost damage 
+11;29;4;200;Cu;
+11;28;0;0;L;
+11;27;4;200;Cu;
+11;26;1;10;Y;frost damage
+11;25;3;50;Cu;frost damage, Old stock right next to it (Yvyra pyta)
+11;24;4;200;Cu;Old stock right next to it (Yvyra pyta)
+11;23;1;10;Y;frost damage 
+11;22;4;10;P;frost damage 
+11;21;3;10;P;frost damage 
+11;20;1;10;Y;frost damage 
+11;19;0;0;L;
+11;18;4;10;P;frost damage 
+11;17;4;10;L;frost damage 
+11;16;3;10;Y;
+11;15;4;10;P;frost damage 
+11;14;2;10;Y;frost damage 
+11;13;3;50;Cu;frost damage
+11;12;4;100;L;
+11;11;3;50;Cu;frost damage 
+11;10;2;100;Y;frost damage, Old stock right next to it (Yvyra pyta)
+11;9;3;10;P;
+11;8;3;10;L;frost damage 
+11;7;4;200;Cu;
+11;6;3;25;P;frost damage 
+11;5;2;10;Y;frost damage 
+11;4;2;10;G;Mini
+11;3;4;200;Cu;
+11;2;3;150;Y;
+11;1;0;0;Y;
+10;37;4;150;Ti;
+10;36;4;50;L;frost damage 
+10;35;4;200;Cu;
+10;34;3;10;G;
+10;33;2;10;C;frost damage 
+10;32;1;50;Y;
+10;31;4;200;L;
+10;30;2;10;Y;frost damage 
+10;29;3;10;Y;frost damage 
+10;28;0;0;Y;
+10;27;3;10;G;frost damage 
+10;26;2;10;Y;frost damage 
+10;25;4;25;L;frost damage 
+10;24;4;200;Cu;
+10;23;3;10;Y;frost damage 
+10;22;2;200;Cu;frost damage 
+10;21;1;200;Y;frost damage 
+10;20;4;200;Y;
+10;19;2;25;U;frost damage 
+10;18;4;100;Cu;
+10;17;4;10;P;frost damage
+10;16;4;50;L;frost damage 
+10;15;2;10;Y;frost damage 
+10;14;3;10;G;frost damage 
+10;13;3;10;Y;frost damage, Old stock right next to it (Yvyra pyta 2 darüber)
+10;12;3;10;G;frost damage 
+10;11;4;200;Cu;
+10;10;2;10;Y;frost damage, Old stock right next to it (Yvyra pyta)
+10;9;2;10;Y;frost damage 
+10;8;0;0;Y;missing 
+10;7;1;100;Y;frost damage 
+10;6;3;10;G;frost damage 
+10;5;2;10;Y;frost damage 
+10;4;0;0;G;missing 
+10;3;4;200;Cu;
+10;2;4;100;G;
+10;1;3;50;Y;
+9;38;4;150;G;
+9;37;3;10;Y;
+9;36;3;25;G;frost damage 
+9;35;0;0;Y;
+9;34;3;50;L;frost damage 
+9;33;3;50;Cu;
+9;32;3;50;Y;
+9;31;4;150;Ti;
+9;30;4;25;L;
+9;29;3;50;Y;frost damage 
+9;28;2;10;Y;frost damage 
+9;27;3;10;Y;
+9;26;3;10;L;
+9;25;4;200;Cu;
+9;24;3;10;U;frost damage 
+9;23;3;10;G;frost damage 
+9;22;3;25;P;frost damage 
+9;21;3;25;L;frost damage 
+9;20;4;10;L;
+9;19;0;0;G;missing
+9;18;4;25;L;frost damage 
+9;17;4;10;P;Old stock right next to it (Yvyra pyta)
+9;16;3;10;Y;frost damage 
+9;15;2;10;L;frost damage 
+9;14;2;10;Y;frost damage 
+9;13;4;25;L;frost damage 
+9;12;2;10;Y;frost damage 
+9;11;2;10;Y;frost damage 
+9;10;2;10;G;
+9;9;4;25;U;frost damage 
+9;8;3;10;G;
+9;7;3;10;G;frost damage 
+9;6;3;10;U;frost damage 
+9;5;2;10;Y;frost damage 
+9;4;4;200;Cu;
+9;3;4;50;G;
+9;2;4;150;Y;
+9;1;4;200;Cu;
+8;38;4;150;Y;
+8;37;4;200;Cu;
+8;36;3;10;U;frost damage 
+8;35;3;10;U;frost damage 
+8;34;4;200;Cu;
+8;33;4;25;G;
+8;32;2;10;Y;frost damage 
+8;31;3;50;G;
+8;30;2;10;Y;frost damage 
+8;29;4;50;G;
+8;28;4;200;Cu;
+8;27;3;10;G;frost damage 
+8;26;2;10;Y;frost damage 
+8;25;2;25;Y;frost damage 
+8;24;3;25;L;frost damage 
+8;23;3;10;Y;frost damage 
+8;22;0;10;G;
+8;21;0;10;Y;
+8;20;3;25;U;frost damage 
+8;19;3;50;L;
+8;18;3;50;Cu;
+8;17;4;10;L;frost damage 
+8;16;2;10;G;
+8;15;3;10;G;
+8;14;1;10;Y;frost damage 
+8;13;0;0;Y;missing
+8;12;3;10;P;frost damage 
+8;11;3;10;U;frost damage 
+8;10;2;10;Y;frost damage 
+8;9;0;10;Y;
+8;8;0;0;P;missing 
+8;7;3;10;L;frost damage 
+8;6;3;25;Ti;frost damage 
+8;5;3;25;Y;frost damage 
+8;4;4;150;Y;
+8;3;4;25;C;frost damage 
+8;2;4;100;Y;
+8;1;4;150;G;
+7;38;4;25;G;
+7;37;4;200;Ti;
+7;36;4;150;Ti;
+7;35;4;200;Cu;
+7;34;0;0;Y;
+7;33;2;25;Y;frost damage 
+7;32;4;200;Cu;
+7;31;3;25;Y;
+7;30;3;10;U;frost damage 
+7;29;2;25;Y;frost damage 
+7;28;3;25;P;frost damage 
+7;27;2;10;Y;frost damage
+7;26;3;25;L;frost damage
+7;25;3;10;G;frost damage 
+7;24;2;10;Y;frost damage 
+7;23;0;0;Y;
+7;22;2;10;Y;
+7;21;3;10;G;
+7;20;2;10;Y;frost damage 
+7;19;4;200;Cu;
+7;18;3;25;G;
+7;17;3;100;L;
+7;16;0;0;P;missing 
+7;15;2;10;Y;frost damage 
+7;14;4;25;L;frost damage 
+7;13;4;50;Ti;frost damage 
+7;12;3;10;Y;frost damage 
+7;11;3;10;Y;frost damage 
+7;10;3;200;Cu;
+7;9;3;25;L;frost damage 
+7;8;3;200;Cu;
+7;7;1;50;Y;Kahl 
+7;6;4;100;Cu;
+7;5;0;0;C;
+7;4;3;50;Y;
+7;3;3;25;G;frost damage 
+7;2;3;25;G;
+7;1;4;200;Y;
+6;38;4;50;G;
+6;37;4;200;Cu;
+6;36;4;150;Y;
+6;35;3;100;G;
+6;34;4;200;Cu;
+6;33;3;25;P;frost damage 
+6;32;4;100;Y;
+6;31;4;100;L;
+6;30;2;25;Y;frost damage 
+6;29;3;200;Cu;frost damageschäden am Stamm
+6;28;1;25;Y;frost damage 
+6;27;4;100;L;
+6;26;2;10;Y;frost damage 
+6;25;3;10;Y;
+6;24;3;50;Y;
+6;23;4;200;Cu;
+6;22;3;50;L;
+6;21;2;25;Y;frost damage 
+6;20;3;25;L;
+6;19;4;25;U;frost damage 
+6;18;1;10;Y;frost damage 
+6;17;3;10;L;frost damage 
+6;16;1;25;Y;frost damage 
+6;15;2;10;Y;frost damage 
+6;14;3;25;Cu;frost damage 
+6;13;0;0;Y;
+6;12;0;0;G;missing 
+6;11;4;25;U;frost damage 
+6;10;0;10;P;Minipflanze 2 vmtl kein P
+6;9;0;0;Y;
+6;8;3;10;Y;frost damage 
+6;7;3;10;G;frost damage 
+6;6;3;25;Ti;frost damage
+6;5;2;25;Y;frost damage 
+6;4;4;150;Cu;
+6;3;3;50;Y;
+6;2;3;50;Y;
+6;1;4;200;Cu;
+5;38;4;200;Y;
+5;37;4;200;Cu;
+5;36;0;0;L;
+5;35;4;100;Y;
+5;34;0;0;P;missing 
+5;33;3;25;L;frost damage 
+5;32;3;10;G;
+5;31;3;50;Y;
+5;30;2;10;C;frost damage 
+5;29;3;25;L;frost damage 
+5;28;3;10;G;frost damage 
+5;27;1;25;C;frost damage 
+5;26;3;10;L;frost damage 
+5;25;4;200;Ti;
+5;24;3;100;L;
+5;23;2;10;Y;frost damage 
+5;22;4;200;Cu;
+5;21;0;0;P;missing 
+5;20;3;10;Y;
+5;19;2;10;Y;frost damage 
+5;18;3;10;L;frost damage 
+5;17;4;200;Cu;
+5;16;4;200;Cu;
+5;15;4;10;L;
+5;14;3;10;G;frost damage 
+5;13;3;25;Ti;frost damage 
+5;12;2;10;L;frost damage 
+5;11;1;10;Y;frost damage 
+5;10;3;10;G;frost damage 
+5;9;0;0;P;missing 
+5;8;0;0;G;
+5;7;0;0;C;
+5;6;0;0;Y;missing 
+5;5;0;0;C;
+5;4;3;25;G;
+5;3;3;50;Y;
+5;2;4;200;Cu;
+5;1;4;150;G;
+4;39;3;50;P;frost damage 
+4;38;4;200;L;
+4;37;3;50;Y;
+4;36;0;0;L;missing 
+4;35;4;200;Cu;
+4;34;0;0;Y;missing 
+4;33;4;50;Y;
+4;32;3;25;P;frost damage 
+4;31;4;150;L;
+4;30;2;50;Y;frost damage 
+4;29;3;50;L;
+4;28;3;100;Y;
+4;27;4;200;Cu;
+4;26;3;25;G;
+4;25;3;10;Y;frost damage 
+4;24;3;25;Y;frost damage 
+4;23;4;100;L;
+4;22;3;25;Y;frost damage 
+4;21;3;10;P;
+4;20;0;10;G;
+4;19;0;10;L;
+4;18;4;200;Cu;
+4;17;3;25;Ti;frost damage 
+4;16;1;10;Y;frost damage 
+4;15;2;25;Y;frost damage 
+4;14;2;10;Y;frost damage 
+4;13;2;10;Y;frost damage 
+4;12;0;10;Y;
+4;11;3;25;G;frost damage 
+4;10;1;10;Y;frost damage 
+4;9;2;50;L;frost damage 
+4;8;2;10;P;frost damage 
+4;7;1;25;Y;frost damage 
+4;6;4;200;Cu;
+4;5;4;200;Cu;
+4;4;3;50;Y;
+4;3;4;200;Cu;
+4;2;3;25;G;
+4;1;4;200;Y;
+3;39;4;200;Y;
+3;38;4;150;G;
+3;37;4;200;Cu;
+3;36;0;0;P;missing 
+3;35;2;25;Y;
+3;34;2;10;G;
+3;33;3;50;L;
+3;32;3;200;Y;eaten away 
+3;31;4;200;G;
+3;30;4;25;G;
+3;29;3;25;P;frost damage
+3;28;4;200;Cu;
+3;27;2;10;U;frost damage 
+3;26;0;50;Y;
+3;25;4;200;Cu;
+3;24;4;100;G;
+3;23;4;100;Y;
+3;22;2;10;Y;frost damage 
+3;21;3;25;L;frost damage 
+3;20;3;10;Y;frost damage 
+3;19;3;25;Y;frost damage 
+3;18;3;25;Y;frost damage 
+3;17;3;25;L;
+3;16;3;25;G;
+3;15;4;200;Cu;
+3;14;3;50;Ti;frost damage 
+3;13;4;150;Cu;
+3;12;3;100;Ti;frost damage 
+3;11;0;0;C;
+3;10;0;0;P;
+3;9;3;25;G;frost damage 
+3;8;2;25;Y;frost damage 
+3;7;4;200;Cu;
+3;6;4;200;Ti;
+3;5;2;25;Y;frost damage 
+3;4;0;0;C;
+3;3;4;25;G;frost damage 
+3;2;3;100;Y;
+3;1;4;200;Cu;
+2;39;4;200;Y;
+2;38;4;200;U;
+2;37;4;200;Y;
+2;36;3;150;Y;eaten away 
+2;35;4;200;Cu;
+2;34;2;150;Y;eaten away 
+2;33;4;200;Cu;
+2;32;3;50;G;
+2;31;3;25;U;frost damage 
+2;30;2;25;P;frost damage 
+2;29;3;100;Y;
+2;28;4;200;Ti;
+2;27;3;50;Y;
+2;26;3;50;L;
+2;25;3;50;Y;
+2;24;0;10;Y;
+2;23;3;50;P;frost damage 
+2;22;3;25;L;
+2;21;3;50;P;frost damage 
+2;20;2;150;Y;eaten away 
+2;19;0;0;P;missing
+2;18;3;50;G;
+2;17;4;200;Cu;
+2;16;4;200;Cu;
+2;15;4;150;G;
+2;14;2;25;Y;frost damage 
+2;13;3;25;G;
+2;12;0;0;Cu;
+2;11;0;0;Y;
+2;10;3;50;Cu;
+2;9;4;200;Cu;
+2;8;3;10;C;
+2;7;3;10;G;
+2;6;4;200;Y;
+2;5;0;0;C;missing 
+2;4;3;25;G;
+2;3;2;10;Y;frost damage 
+2;2;4;200;Cu;
+2;1;4;200;G;
+1;39;3;150;P;frost damage 
+1;38;4;200;Y;
+1;37;4;200;Y;
+1;36;4;200;Y;
+1;35;3;50;P;frost damage 
+1;34;4;200;G;
+1;33;4;200;U;
+1;32;4;200;Y;
+1;31;4;200;Y;
+1;30;4;200;Cu;
+1;29;4;150;G;
+1;28;3;200;Y;eaten away
+1;27;4;200;Cu;
+1;26;4;150;G;
+1;25;4;200;U;
+1;24;4;200;Cu;
+1;23;4;150;G;
+1;22;4;200;Y;
+1;21;4;200;Cu;
+1;20;4;150;G;
+1;19;3;200;Y;
+1;18;4;25;P;frost damage 
+1;17;4;200;Y;
+1;16;4;150;Y;
+1;15;2;200;Y;eaten away 
+1;14;4;100;Y;
+1;13;3;50;Y;
+1;12;2;25;G;frost damage 
+1;11;2;10;Y;frost damage 
+1;10;4;50;G;
+1;9;4;50;Y;
+1;8;3;150;L;
+1;7;4;100;Y;
+1;6;4;200;Cu;
+1;5;4;100;Y;
+1;4;4;200;Cu;
+1;3;4;150;Y;
+1;2;4;50;G;
+1;1;4;100;Y;
