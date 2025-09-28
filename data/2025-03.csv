@@ -44,12 +44,12 @@ row;position;condition;heigth;species;notes
 2;4;3;50;G;
 2;5;2;49;C;
 2;6;4;150;Y;
-2;7;2;10;G;!! Stummel mit Blatt, ausgefranzt, vmtl abgemäht 
-2;8;0;;C;war:25
+2;7;2;10;G;!! Stub with leaf, frayed, probably mowed 
+2;8;0;0;C;was:25
 2;9;4;200;Cu;
 2;10;3;50;Cu;
-2;11;0;;Y;
-2;12;0;;Cu;
+2;11;0;0;Y;
+2;12;0;0;Cu;
 2;13;2;40;G;
 2;14;3;50;Y;
 2;15;4;150;G;
@@ -59,9 +59,9 @@ row;position;condition;heigth;species;notes
 2;19;3;50;P;
 2;20;4;100;Y;
 2;21;3;100;P;
-2;22;0;;L;war:40
+2;22;0;0;L;was:40
 2;23;3;150;P;
-2;24;0;;Y;war:40
+2;24;0;0;Y;was:40
 2;25;3;50;Y;
 2;26;3;50;L;
 2;27;3;50;Y;
@@ -80,14 +80,14 @@ row;position;condition;heigth;species;notes
 3;1;4;200;Cu;
 3;2;3;100;Y;
 3;3;3;50;G;
-3;4;0;;C;
+3;4;0;0;C;
 3;5;2;50;Y;
 3;6;4;200;Ti;
 3;7;4;200;Cu;
 3;8;3;30;Y;
 3;9;3;40;G;
-3;10;0;;P;
-3;11;0;;C;
+3;10;0;0;P;
+3;11;0;0;C;
 3;12;4;150;Ti;
 3;13;3;100;Cu;
 3;14;4;150;Ti;
@@ -127,15 +127,15 @@ row;position;condition;heigth;species;notes
 4;9;3;50;L;
 4;10;2;40;Y;
 4;11;3;50;G;
-4;12;0;;Y;Nicht gefunden, Stock steht
+4;12;0;0;Y;Not found, Stick stands
 4;13;2;30;Y;
 4;14;3;30;Y;
-4;15;3;50;Y;Aus altem Stumpf 
+4;15;3;50;Y;From an old stump 
 4;16;2;40;Y;
 4;17;4;150;Ti;
 4;18;4;200;Cu;
-4;19;0;;L;Nicht gefunden, nur Stock liegt noch da
-4;20;0;;G;Nicht gefunden
+4;19;0;0;L;Not found, only the stick is still there
+4;20;0;0;G;Not found
 4;21;2;10;P;
 4;22;3;50;Y;
 4;23;3;50;L;
@@ -159,11 +159,11 @@ row;position;condition;heigth;species;notes
 5;2;4;200;Cu;
 5;3;3;50;Y;
 5;4;3;40;G;
-5;5;0;;C;
+5;5;0;0;C;
 5;6;2;30;Y;
-5;7;0;;C;
-5;8;0;;G;Nicht gefunden
-5;9;2;15;P;Stummel mit Blatt
+5;7;0;0;C;
+5;8;0;0;G;Not found
+5;9;2;15;P;Stub with leaf
 5;10;2;30;G;
 5;11;3;50;Y;
 5;12;3;60;L;
@@ -174,7 +174,7 @@ row;position;condition;heigth;species;notes
 5;17;4;200;Cu;
 5;18;3;49;L;
 5;19;2;30;Y;
-5;20;0;;Y;
+5;20;0;0;Y;
 5;21;2;15;P;
 5;22;4;200;Cu;
 5;23;3;50;Y;
@@ -184,13 +184,13 @@ row;position;condition;heigth;species;notes
 5;27;3;49;C;
 5;28;2;30;G;
 5;29;3;50;L;
-5;30;2;50;C;Kahl, treibt aus
+5;30;2;50;C;Bald, sprouts
 5;31;3;50;Y;
-5;32;2;10;G;Stummel mit Blatt, vmtl drübergemäht
+5;32;2;10;G;Stub with leaf, probably mowed over
 5;33;3;50;L;
 5;34;2;30;P;
 5;35;4;100;Y;
-5;36;0;;L;
+5;36;0;0;L;
 5;37;4;200;Cu;
 5;38;4;200;Y;
 6;1;4;200;Cu;
@@ -201,11 +201,11 @@ row;position;condition;heigth;species;notes
 6;6;3;150;Ti;
 6;7;2;40;G;
 6;8;3;50;Y;
-6;9;0;;Y;
-6;10;2;5;P;Wiederbelebt
+6;9;0;0;Y;
+6;10;2;5;P;Revived
 6;11;4;100;U;
-6;12;2;10;G;Wiederbelebt
-6;13;0;;Y;Trocken , war:40
+6;12;2;10;G;Revived
+6;13;0;0;Y;dry , was:40
 6;14;3;50;Cu;
 6;15;3;40;Y;
 6;16;4;50;Y;
@@ -217,7 +217,7 @@ row;position;condition;heigth;species;notes
 6;22;2;40;L;
 6;23;4;200;Cu;
 6;24;3;50;Y;
-6;25;3;49;Y;Wiederbelebt, 20, Stock steht, am Termitenhügel
+6;25;3;49;Y;Revived, 20, Stick stands, at the termite mound
 6;26;2;40;Y;
 6;27;4;100;L;
 6;28;4;50;Y;
@@ -230,17 +230,17 @@ row;position;condition;heigth;species;notes
 6;35;3;100;G;
 6;36;4;150;Y;
 6;37;4;200;Cu;
-6;38;3;50;G;Wiederbelebt 
+6;38;3;50;G;Revived 
 7;1;4;200;Y;
 7;2;3;30;G;
 7;3;2;50;G;
 7;4;3;50;Y;
-7;5;0;;C;Stummel, vmtl drübergemäht
+7;5;0;0;C;Stub, probably mowed over
 7;6;4;100;Cu;
 7;7;3;50;Y;
 7;8;3;150;Cu;
 7;9;3;50;L;
-7;10;3;200;Cu;Schräg
+7;10;3;200;Cu;
 7;11;3;30;Y;
 7;12;3;40;Y;
 7;13;4;150;Ti;
@@ -250,10 +250,10 @@ row;position;condition;heigth;species;notes
 7;17;3;100;L;
 7;18;2;30;G;
 7;19;4;200;Cu;
-7;20;3;50;Y;Wiederbelebt
+7;20;3;50;Y;Revived
 7;21;2;20;G;
-7;22;0;;Y;Nicht gefunden, Stock steht 
-7;23;0;;Y;Stummel, vmtl drübergemäht  Stock nebenan 
+7;22;0;0;Y;Not found, Stick stands 
+7;23;0;0;Y;Stub, probably mowed over, Stock lies next to it 
 7;24;2;40;Y;
 7;25;2;50;G;
 7;26;3;30;L;
@@ -264,24 +264,24 @@ row;position;condition;heigth;species;notes
 7;31;2;30;Y;
 7;32;4;200;Cu;
 7;33;4;50;Y;
-7;34;0;;Y;
+7;34;0;0;Y;
 7;35;4;200;Cu;
 7;36;4;150;Ti;
 7;37;4;200;Ti;
-7;38;2;5;G;Stummel mit Blatt, vmtl drübergemäht , Stock liegt daneben 
+7;38;2;5;G;Stub with leaf, probably mowed over, Stick lies next to it 
 8;1;4;150;G;
 8;2;4;100;Y;
 8;3;4;50;C;
 8;4;4;100;Y;
 8;5;3;50;Y;
-8;6;2;49;Ti;Trocken, neue Blätter 
+8;6;2;49;Ti;dry, new leaves 
 8;7;3;49;L;
-8;8;2;49;P;Trocken  neue Blätter, 10 
-8;9;0;;Y;Drübergemäht, Reste, Stock liegt daneben 
+8;8;2;49;P;dry new leaves, 10 
+8;9;0;0;Y;mowed over, rests, Stick lies next to it 
 8;10;3;50;Y;
 8;11;4;150;U;
 8;12;3;50;P;
-8;13;2;10;Y;Stängel, ausgefranst, neue Triebe, 10, vmtl drübergemäht 
+8;13;2;10;Y;Stems frayed, new shoots, 10, probably mowed over 
 8;14;3;50;Y;
 8;15;2;20;G;
 8;16;2;25;G;
@@ -289,8 +289,8 @@ row;position;condition;heigth;species;notes
 8;18;3;50;Cu;
 8;19;3;50;L;
 8;20;4;200;U;
-8;21;0;;Y;Nicht gefunden 
-8;22;0;;G;Nicht gefunden, Stock liegt daneben 
+8;21;0;0;Y;Not found 
+8;22;0;0;G;Not found, Stick lies next to it 
 8;23;3;40;Y;
 8;24;3;50;L;
 8;25;3;50;Y;
@@ -314,50 +314,50 @@ row;position;condition;heigth;species;notes
 9;5;2;50;Y;
 9;6;4;200;U;
 9;7;3;49;G;
-9;8;2;10;G;Stummel mit Blättern,  trocken, vmtl drübergemäht 
+9;8;2;10;G;Stub with leaves, dry, probably mowed over 
 9;9;4;150;U;
-9;10;2;10;G;Stummel mit Blättern, grün, drübergemäht 
+9;10;2;10;G;Stub with leaves, green, mowed over 
 9;11;3;50;Y;
 9;12;3;40;Y;
 9;13;2;40;L;
 9;14;3;50;Y;
 9;15;3;50;L;
 9;16;3;50;Y;
-9;17;4;49;P;Altbestand direkt nebenan (Yvyra pyta)
+9;17;4;49;P;Old stock right next to it (Yvyra pyta)
 9;18;3;50;L;
-9;19;2;5;G;Stummel mit Blättern, grün, drübergemäht,  Stock liegt daneben 
-9;20;0;;L;Stummel mit Blättern, trocken, drübergemäht, Stock liegt daneben 
+9;19;2;5;G;Stub with leaves, grün, mowed over, Stick lies next to it 
+9;20;0;0;L;Stub with leaves, dry, mowed over, Stick lies next to it 
 9;21;3;50;L;
 9;22;3;100;P;
 9;23;2;25;G;
 9;24;4;150;U;
 9;25;4;200;Cu;
 9;26;3;20;L;
-9;27;2;10;Y;kahl, grün, drübergemäht, Stock steht daneben 
+9;27;2;10;Y;Bald, green, mowed over, Stick stands next to it 
 9;28;4;100;Y;
 9;29;4;50;Y;
 9;30;3;50;L;
 9;31;4;150;Ti;
 9;32;3;50;Y;
-9;33;2;50;Cu;Sehr dünner Stängel 
+9;33;2;50;Cu;Very thin stem
 9;34;3;50;L;
-9;35;0;;Y;Nicht gefunden,  Stock liegt daneben 
+9;35;0;0;Y;Not found, Stick lies next to it 
 9;36;3;50;G;
-9;37;0;;Y;Nicht gefunden,  Stock liegt daneben 
+9;37;0;0;Y;Not found, Stick lies next to it 
 9;38;4;150;G;
 10;1;3;60;Y;
 10;2;3;110;G;
 10;3;3;150;Cu;
-10;4;2;50;G;Stummel mit Blättern, 5, drübergemäht, Stock liegt daneben 
+10;4;2;50;G;Stub with leaves, 5, mowed over, Stick lies next to it 
 10;5;3;50;Y;
 10;6;3;49;G;
 10;7;4;100;Y;
 10;8;2;30;Y;
 10;9;2;50;Y;
-10;10;2;50;Y;Altbestand direkt nebenan (Yvyra pyta)
+10;10;2;50;Y;Old stock right next to it (Yvyra pyta)
 10;11;4;200;Cu;
 10;12;2;49;G;
-10;13;3;50;Y;Altbestand direkt nebenan (Yvyra pyta)
+10;13;3;50;Y;Old stock right next to it (Yvyra pyta)
 10;14;3;60;G;
 10;15;3;60;Y;
 10;16;3;100;L;
@@ -372,55 +372,55 @@ row;position;condition;heigth;species;notes
 10;25;3;100;L;
 10;26;3;40;Y;
 10;27;2;30;G;
-10;28;2;10;Y;Stummel mit Zweig, drübergemäht, Stock liegt daneben 
+10;28;2;10;Y;Stub with branch, mowed over, Stick lies next to it 
 10;29;3;50;Y;
 10;30;3;50;Y;
 10;31;4;200;L;
-10;32;2;50;Y;Grün aber kahl
+10;32;2;50;Y;Green but bald
 10;33;3;50;C;
-10;34;2;49;G;Trocken, mit Blättern 
+10;34;2;49;G;dry, with leaves 
 10;35;4;200;Cu;
 10;36;3;50;L;
 10;37;4;100;Ti;
-11;1;0;;Y;
+11;1;0;0;Y;
 11;2;4;150;Y;
 11;3;4;200;Cu;
-11;4;2;5;G;Stummel mit Blättern , drübergemäht 
+11;4;2;5;G;Stub with leaves, mowed over 
 11;5;3;100;Y;
 11;6;3;50;P;
 11;7;4;200;Cu;
 11;8;3;50;L;
-11;9;0;;P;Nicht gefunden 
-11;10;4;100;Y;Altbestand (Yvyra pyta)
+11;9;0;0;P;Not found 
+11;10;4;100;Y;Old stock (Yvyra pyta)
 11;11;3;150;Cu;
 11;12;3;100;L;
-11;13;3;150;Cu;Braucht Stock!
+11;13;3;150;Cu;Needs stick!
 11;14;3;50;Y;
 11;15;3;49;P;
-11;16;0;;Y;Stummel, drübergemäht 
+11;16;0;0;Y;Stub, mowed over 
 11;17;3;50;L;
 11;18;3;49;P;
-11;19;0;;L;Nicht gefunden 
+11;19;0;0;L;Not found 
 11;20;2;40;Y;
 11;21;3;50;P;
 11;22;3;50;P;
 11;23;3;49;Y;
-11;24;3;200;Cu;Altbestand direkt nebenan (Yvyra pyta)
-11;25;4;200;Cu;Altbestand direkt nebenan (Yvyra pyta)
+11;24;3;200;Cu;Old stock right next to it (Yvyra pyta)
+11;25;4;200;Cu;Old stock right next to it (Yvyra pyta)
 11;26;2;30;Y;
 11;27;4;200;Cu;
-11;28;0;;L;Nicht gefunden 
+11;28;0;0;L;Not found 
 11;29;4;200;Cu;
 11;30;4;100;P;
-11;31;0;;L;Nicht gefunden 
-11;32;0;;Y;Nicht gefunden 
+11;31;0;0;L;Not found 
+11;32;0;0;Y;Not found 
 11;33;3;30;G;
 11;34;4;150;Cu;
 11;35;2;40;Y;
 11;36;3;50;Y;
 11;37;2;30;P;
-11;38;0;;P;Nicht gefunden 
-11;39;0;;L;
+11;38;0;0;P;Not found 
+11;39;0;0;L;
 12;1;4;200;L;
 12;2;3;30;G;
 12;3;2;40;G;
@@ -428,35 +428,35 @@ row;position;condition;heigth;species;notes
 12;5;4;100;Y;
 12;6;4;150;L;
 12;7;3;120;Cu;
-12;8;0;;Y;Nicht gefunden 
+12;8;0;0;Y;Not found 
 12;9;3;20;P;
 12;10;3;49;L;
 12;11;4;200;Cu;
-12;12;0;;Y;
+12;12;0;0;Y;
 12;13;3;50;L;
 12;14;4;200;Cu;
 12;15;3;50;P;
-12;16;2;5;G;Stummel mit Blättern,  drübergemäht 
+12;16;2;5;G;Stub with leaves, mowed over 
 12;17;3;150;Cu;
 12;18;3;50;Y;
 12;19;3;50;P;
-12;20;0;;Y;
-12;21;0;;P;
-12;22;4;100;P;Wiederbelebt 
+12;20;0;0;Y;
+12;21;0;0;P;
+12;22;4;100;P;Revived 
 12;23;3;50;Y;
 12;24;4;200;Cu;
-12;25;0;;L;Nicht gefunden 
+12;25;0;0;L;Not found 
 12;26;3;40;L;
 12;27;4;150;U;
 12;28;3;50;L;
 12;29;3;40;G;
-12;30;4;160;Cu;Altbestand direkt nebenan (Yvyra pyta)
-12;31;0;;P;Nicht gefunden 
+12;30;4;160;Cu;Old stock right next to it (Yvyra pyta)
+12;31;0;0;P;Not found 
 12;32;3;30;G;
 12;33;3;160;Cu;
 12;34;2;40;Y;
 12;35;3;60;G;
-12;36;0;;L;Nicht gefunden  außer trockenen Blättern
+12;36;0;0;L;Not found, dry leaves 
 12;37;3;150;P;
 13;1;4;150;Y;
 13;2;2;30;P;
@@ -483,24 +483,24 @@ row;position;condition;heigth;species;notes
 13;23;4;100;L;
 13;24;4;150;Y;
 13;25;3;60;G;
-13;26;0;;P;Nicht gefunden 
+13;26;0;0;P;Not found 
 13;27;4;150;Y;
 13;28;4;200;Y;
 13;29;3;200;Cu;
-13;30;4;150;U;Altbestand direkt nebenan (Yvyra pyta)
-13;31;0;;Y;Nicht gefunden 
+13;30;4;150;U;Old stock right next to it (Yvyra pyta)
+13;31;0;0;Y;Not found 
 13;32;3;150;Cu;
 13;33;3;100;Y;
 13;34;3;200;Cu;
 13;35;3;50;Y;
-13;36;0;;Y;Drübergemäht 
+13;36;0;0;Y;mowed over 
 13;37;3;100;Y;
 14;1;4;200;Cu;
-14;2;2;20;C;Kahl, grün, neuer Trieb
+14;2;2;20;C;Bald, green, new sprouds
 14;3;3;50;Y;
 14;4;4;200;U;
 14;5;4;200;Cu;
-14;6;2;10;G;Stummel mit Blättern,  drübergemäht 
+14;6;2;10;G;Stub with leaves, mowed over 
 14;7;3;150;Cu;
 14;8;3;50;G;
 14;9;3;50;L;
@@ -509,16 +509,16 @@ row;position;condition;heigth;species;notes
 14;12;3;50;Y;
 14;13;3;50;G;
 14;14;3;50;Y;
-14;15;2;20;G;Stummel mit Blättern , 5, Stock liegt daneben 
+14;15;2;20;G;Stub with leaves, 5, Stick lies next to it 
 14;16;3;50;Y;
 14;17;3;50;L;
-14;18;2;10;G;Stummel mit Blättern,  war trocken, Stängel liegt daneben, vmtl drübergemäht 
-14;19;2;49;Y;Trocken  neue Blätter 
+14;18;2;10;G;Stub with leaves, was dry, Stem lies next to it, mowed over 
+14;19;2;49;Y;dry, new leaves 
 14;20;3;50;Y;
 14;21;3;60;G;
 14;22;3;50;L;
 14;23;2;25;Y;
-14;24;3;50;Y;Wiederbelebt 
+14;24;3;50;Y;Revived 
 14;25;2;30;G;
 14;26;3;50;Y;
 14;27;3;40;G;
@@ -526,7 +526,7 @@ row;position;condition;heigth;species;notes
 14;29;4;150;Y;
 14;30;3;20;P;
 14;31;4;200;Y;
-14;32;0;;Y;Stumpf, kahl, drübergemäht 
+14;32;0;0;Y;Stub, Bald, mowed over 
 14;33;3;50;L;
 14;34;3;50;G;
 14;35;4;60;P;
@@ -538,7 +538,7 @@ row;position;condition;heigth;species;notes
 15;4;3;200;Cu;
 15;5;2;50;L;
 15;6;4;200;U;
-15;7;2;5;G;Stummel mit Blättern, drübergemäht
+15;7;2;5;G;Stub with leaves, mowed over
 15;8;4;100;Y;
 15;9;3;150;Ti;
 15;10;4;70;U;
@@ -546,29 +546,29 @@ row;position;condition;heigth;species;notes
 15;12;3;50;L;
 15;13;2;40;G;
 15;14;3;50;L;
-15;15;0;;L;Nicht gefunden 
+15;15;0;0;L;Not found 
 15;16;2;40;G;
 15;17;4;200;Cu;
 15;18;2;20;P;
 15;19;2;20;L;
 15;20;2;40;G;
-15;21;3;150;Cu;Altbestand direkt nebenan (Yvyra pyta)
-15;22;0;;G;Nicht gefunden 
-15;23;0;;Y;
+15;21;3;150;Cu;Old stock right next to it (Yvyra pyta)
+15;22;0;0;G;Not found 
+15;23;0;0;Y;
 15;24;3;50;Cu;
-15;25;2;49;L;Wiederbelebt 
+15;25;2;49;L;Revived 
 15;26;2;25;G;
 15;27;4;100;P;
 15;28;3;50;L;
 15;29;3;50;U;
-15;30;3;160;Ti;Busch nebenan muss weg  Ti wächst rein
+15;30;3;160;Ti;Shrub next to it to be removed, Ti grows into it
 15;31;3;150;Cu;
 15;32;2;50;G;
 15;33;4;50;P;
 15;34;3;50;Y;
 15;35;4;150;P;
 15;36;4;100;Y;
-15;37;3;200;Cu;Altbestand daneben (Curupa'y)
+15;37;3;200;Cu;Old stock right next to it (Curupa'y)
 16;1;3;50;G;
 16;2;3;30;G;
 16;3;3;200;Cu;
@@ -582,8 +582,8 @@ row;position;condition;heigth;species;notes
 16;11;2;30;G;
 16;12;3;50;C;
 16;13;3;50;Y;
-16;14;3;150;Cu;2 Bäumchen nebeneinander, 1 später weg
-16;15;4;200;Cu;2 Bäumchen nebeneinander, 1 später weg
+16;14;3;150;Cu;2 trees next to each other, 1 removed later
+16;15;4;200;Cu;2 trees next to each other, 1 removed later
 16;16;3;50;Y;
 16;17;4;150;P;
 16;18;3;49;G;
@@ -594,19 +594,19 @@ row;position;condition;heigth;species;notes
 16;23;2;10;P;
 16;24;4;150;Ti;
 16;25;4;200;U;
-16;26;3;100;L;Altbestand direkt daneben (?)
-16;27;3;50;L;Wiederbelebt 
+16;26;3;100;L;Old stock right next to it (?)
+16;27;3;50;L;Revived 
 16;28;3;100;Y;
 16;29;2;20;L;
-16;30;3;50;L;Wiederbelebt 
-16;31;2;49;L;Wiederbelebt 
-16;32;3;60;L;Strauch nebenan weg Stock fehlt
+16;30;3;50;L;Revived 
+16;31;2;49;L;Revived 
+16;32;3;60;L;Shrub next to it to be removed Stick missing
 16;33;3;100;Cu;
 16;34;3;60;G;
 16;35;4;150;Y;
 16;36;3;50;P;
 16;37;4;150;Y;
-17;1;4;200;Y;2 Bäumchen nebeneinander, 1 später weg
+17;1;4;200;Y;2 trees next to each other, 1 removed later
 17;2;3;50;G;
 17;3;3;40;G;
 17;4;3;200;Cu;
@@ -630,7 +630,7 @@ row;position;condition;heigth;species;notes
 17;22;3;100;Y;
 17;23;2;50;G;
 17;24;4;100;L;
-17;25;0;;Y;Stock fehlt nichts zu sehen Altbestand direkt daneben (?)
+17;25;0;0;Y;Stick missing nothing to see Old stock right next to it (?)
 17;26;4;100;P;
 17;27;3;50;G;
 17;28;3;150;Y;
@@ -645,21 +645,21 @@ row;position;condition;heigth;species;notes
 17;37;4;100;P;
 18;1;4;70;L;
 18;2;3;200;Cu;
-18;3;2;10;G;Stummel mit Blättern, drübergemäht 
-18;4;4;200;Cu;Direkt dran wächst P >2m
+18;3;2;10;G;Stub with leaves, mowed over 
+18;4;4;200;Cu;
 18;5;4;200;Cu;
 18;6;4;200;Y;
 18;7;4;150;L;
-18;8;4;200;Cu;Braucht Stock 
+18;8;4;200;Cu;Needs stick
 18;9;4;200;U;
-18;10;2;160;Ti;Kahl gefressen 
+18;10;2;160;Ti;Bald gefressen 
 18;11;4;200;Cu;
 18;12;3;100;L;
-18;13;2;49;P;Wiederbelebt 
+18;13;2;49;P;Revived 
 18;14;3;150;Y;
 18;15;3;100;L;
 18;16;3;50;L;
-18;17;0;;G;Nicht gefunden 
+18;17;0;0;G;Not found 
 18;18;4;200;Y;
 18;19;2;30;G;
 18;20;3;100;Y;
@@ -683,23 +683,23 @@ row;position;condition;heigth;species;notes
 19;1;3;50;L;
 19;2;3;150;Cu;
 19;3;3;100;G;
-19;4;0;;P;
+19;4;0;0;P;
 19;5;2;20;L;
 19;6;3;150;Cu;
-19;7;0;;G;Nicht gefunden 
+19;7;0;0;G;Not found 
 19;8;3;100;G;
 19;9;4;200;U;
-19;10;0;;G;Nicht gefunden 
-19;11;4;200;Cu;Braucht Stock 
+19;10;0;0;G;Not found 
+19;11;4;200;Cu;Needs stick
 19;12;3;100;G;
-19;13;0;;P;Stumpf,  vmtl drübergemäht 
+19;13;0;0;P;Stub, probably mowed over 
 19;14;4;150;Y;
-19;15;0;;Y;Nicht gefunden 
+19;15;0;0;Y;Not found 
 19;16;3;100;Y;
 19;17;3;100;Y;
 19;18;3;50;Y;
 19;19;3;50;L;
-19;20;0;;Cu;Stumpf, drübergemäht 
+19;20;0;0;Cu;Stub, mowed over 
 19;21;3;150;Y;
 19;22;4;200;Y;
 19;23;4;200;Y;
@@ -710,7 +710,7 @@ row;position;condition;heigth;species;notes
 19;28;3;150;Ti;
 19;29;3;150;Y;
 19;30;4;200;Cu;
-19;31;0;;L;
+19;31;0;0;L;
 19;32;4;200;G;
 19;33;4;200;Y;
 19;34;4;200;Y;
@@ -730,7 +730,7 @@ row;position;condition;heigth;species;notes
 20;11;2;30;G;
 20;12;4;100;L;
 20;13;2;20;P;
-20;14;3;49;Y;Wiederbelebt 
+20;14;3;49;Y;Revived 
 20;15;4;150;Y;
 20;16;3;50;P;
 20;17;4;100;Y;
@@ -738,14 +738,14 @@ row;position;condition;heigth;species;notes
 20;19;3;50;P;
 20;20;3;50;Y;
 20;21;3;50;L;
-20;22;0;;Y;
-20;23;2;10;G;Stummel mit Blättern,  drübergemäht 
+20;22;0;0;Y;
+20;23;2;10;G;Stub with leaves, mowed over 
 20;24;3;50;Y;
 20;25;3;80;P;
-20;26;2;10;G;Stummel mit Blättern,  drübergemäht 
+20;26;2;10;G;Stub with leaves, mowed over 
 20;27;2;50;Y;
 20;28;3;150;L;
-20;29;0;;Y;Drübergemäht   stumpf, Altbestand daneben (Curupa'y)
+20;29;0;0;Y;mowed over, Stub, Old stock right next to it (Curupa'y)
 20;30;4;200;Cu;
 20;31;3;60;C;
 20;32;4;200;L;
@@ -767,7 +767,7 @@ row;position;condition;heigth;species;notes
 21;11;4;150;L;
 21;12;3;49;P;
 21;13;2;30;G;
-21;14;3;200;Cu;Braucht Stock 
+21;14;3;200;Cu;Needs stick
 21;15;3;50;C;
 21;16;3;50;Y;
 21;17;3;50;L;
@@ -782,11 +782,11 @@ row;position;condition;heigth;species;notes
 21;26;2;50;Y;
 21;27;4;200;Cu;
 21;28;3;60;Y;
-21;29;2;5;G;Stummel mit Blättern,  drübergemäht 
+21;29;2;5;G;Stub with leaves, mowed over 
 21;30;3;100;Y;
-21;31;2;5;L;Stummel mit Knospen   drübergemäht 
+21;31;2;5;L;Stub with sprouds, mowed over 
 21;32;3;50;Y;
-21;33;0;;G;Stumpf, drübergemäht 
+21;33;0;0;G;Stub, mowed over 
 21;34;4;200;Y;
 21;35;4;150;L;
 21;36;3;150;Cu;
@@ -800,11 +800,11 @@ row;position;condition;heigth;species;notes
 22;7;3;150;Y;
 22;8;3;50;L;
 22;9;2;50;Y;
-22;10;0;;G;
+22;10;0;0;G;
 22;11;3;50;G;
 22;12;3;100;Y;
 22;13;2;50;Y;
-22;14;2;10;P;Stumpf mit Blättern,   drübergemäht 
+22;14;2;10;P;Stub with leaves, mowed over 
 22;15;3;100;L;
 22;16;3;50;P;
 22;17;3;100;L;
@@ -819,7 +819,7 @@ row;position;condition;heigth;species;notes
 22;26;3;50;Y;
 22;27;3;40;G;
 22;28;4;150;L;
-22;29;0;;P;Nicht gefunden 
+22;29;0;0;P;Not found 
 22;30;3;50;Y;
 22;31;4;200;Cu;
 22;32;4;200;Y;
@@ -850,15 +850,15 @@ row;position;condition;heigth;species;notes
 23;21;3;100;L;
 23;22;4;200;Cu;
 23;23;2;100;L;
-23;24;3;100;Cu;Braucht Stock 
-23;25;0;;G;Nicht gefunden 
+23;24;3;100;Cu;Needs stick
+23;25;0;0;G;Not found 
 23;26;3;100;Y;
 23;27;3;50;G;
-23;28;3;150;Cu;Braucht Stock 
-23;29;2;10;G;Stummel mit Blättern, drübergemäht 
+23;28;3;150;Cu;Needs stick
+23;29;2;10;G;Stub with leaves, mowed over 
 23;30;3;150;L;
 23;31;4;200;Y;
-23;32;3;200;Y;Altbestand (Yvyra pyta)
+23;32;3;200;Y;Old stock (Yvyra pyta)
 23;33;4;200;Y;
 23;34;4;100;Y;
 23;35;3;200;Y;
@@ -880,12 +880,12 @@ row;position;condition;heigth;species;notes
 24;14;3;150;L;
 24;15;4;150;Y;
 24;16;4;150;Y;
-24;17;0;;P;
+24;17;0;0;P;
 24;18;4;200;L;
 24;19;4;200;Y;
 24;20;4;200;L;
-24;21;0;;G;
-24;22;0;;L;Stumpf, drübergemäht 
+24;21;0;0;G;
+24;22;0;0;L;Stub, mowed over 
 24;23;2;49;P;
 24;24;3;100;L;
 24;25;3;200;Cu;
@@ -913,12 +913,12 @@ row;position;condition;heigth;species;notes
 25;11;4;200;L;
 25;12;4;150;Ti;
 25;13;4;100;L;
-25;14;0;;L;Stumpf, drübergemäht 
+25;14;0;0;L;Stub, mowed over 
 25;15;4;50;C;
 25;16;3;50;P;
 25;17;4;200;?;
 25;18;4;150;P;
-25;19;0;;G;Nicht gefunden 
+25;19;0;0;G;Not found 
 25;20;4;150;L;
 25;21;2;50;L;
 25;22;4;100;G;
@@ -926,17 +926,17 @@ row;position;condition;heigth;species;notes
 25;24;3;50;G;
 25;25;3;100;G;
 25;26;4;150;P;
-25;27;2;30;G;Mini 5
-25;28;2;30;G;Mini 5
+25;27;2;30;G;Mini 5cm
+25;28;2;30;G;Mini 5cm
 25;29;4;100;G;
 25;30;4;200;Cu;
-25;31;3;150;Cu;Braucht Stock 
+25;31;3;150;Cu;Needs stick
 25;32;3;200;Cu;
 25;33;3;50;G;
 25;34;4;150;Ti;
-25;35;0;;Cu;Drübergemäht
+25;35;0;0;Cu;mowed over
 25;36;4;150;P;
-26;1;4;200;Cu;Altbestand direkt nebenan (Yvyra pyta)
+26;1;4;200;Cu;Old stock right next to it (Yvyra pyta)
 26;2;4;200;Ti;
 26;3;4;200;Y;
 26;4;4;200;P;
@@ -963,12 +963,12 @@ row;position;condition;heigth;species;notes
 26;25;4;200;L;
 26;26;3;100;P;
 26;27;4;200;L;
-26;28;3;200;Cu;Altbestand direkt nebenan (Yvyra pyta)
-26;29;3;50;G;Wiederbelebt 
+26;28;3;200;Cu;Old stock right next to it (Yvyra pyta)
+26;29;3;50;G;Revived 
 26;30;3;60;L;
 26;31;3;100;G;
 26;32;3;200;Cu;
-26;33;;200;Y;Altbestand (Yvyra pyta)
+26;33;;200;Y;Old stock (Yvyra pyta)
 26;34;4;150;G;
 26;35;4;200;L;
 26;36;4;200;Y;
@@ -997,54 +997,54 @@ row;position;condition;heigth;species;notes
 27;23;4;150;Y;
 27;24;4;150;L;
 27;25;4;200;L;
-27;26;4;200;Cu;Strauch nebenan weg
+27;26;4;200;Cu;Shrub next to it to be removed
 27;27;3;150;Ti;
 27;28;3;200;Ti;
 27;29;4;200;Y;
 27;30;4;200;L;
 27;31;4;200;G;
-27;32;2;10;G;Stummel mit Blättern,   drübergemäht 
+27;32;2;10;G;Stub with leaves, mowed over 
 27;33;4;200;Cu;
 27;34;4;200;Cu;
 27;35;3;150;G;
 27;36;4;150;G;
-28;1;3;150;L;Altbestand direkt nebenan (Yvyra pyta)
+28;1;3;150;L;Old stock right next to it (Yvyra pyta)
 28;2;4;200;Y;
 28;3;4;150;L;
 28;4;4;100;G;
 28;5;3;150;L;
 28;6;3;200;Y;
 28;7;4;150;P;
-28;8;3;50;G;Altbestand daneben (Curupa'y)
+28;8;3;50;G;Old stock right next to it (Curupa'y)
 28;9;2;40;G;
-28;10;0;;C;Drübergemäht 
+28;10;0;0;C;mowed over 
 28;11;3;150;L;
 28;12;3;200;Cu;
-28;13;3;10;G;Stummel mit Blättern,  drübergemäht 
+28;13;3;10;G;Stub with leaves, mowed over 
 28;14;4;200;Cu;
 28;15;3;150;Y;
 28;16;3;100;P;
 28;17;4;200;Y;
 28;18;3;150;L;
 28;19;3;200;Cu;
-28;20;2;10;G;Stummel mit Blättern,   drübergemäht 
+28;20;2;10;G;Stub with leaves, mowed over 
 28;21;4;200;Cu;
 28;22;3;60;G;
 28;23;3;50;L;
 28;24;4;200;Cu;
 28;25;4;200;Y;
-28;26;0;;Cu;
-28;27;0;;L;Stumpf, drübergemäht 
+28;26;0;0;Cu;
+28;27;0;0;L;Stub, mowed over 
 28;28;4;200;L;
-28;29;;200;Cu;Altbestand (Curupa'y)
+28;29;;200;Cu;Old stock (Curupa'y)
 28;30;3;200;L;
 28;31;3;200;G;
 28;32;4;150;G;
 28;33;4;200;G;
 28;34;3;200;Cu;
 28;35;4;200;Y;
-29;1;4;200;G;Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
-29;2;4;200;Cu;Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
+29;1;4;200;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+29;2;4;200;Cu;Neighbor's tree needs to be cut down (otherwise it will grow together)
 29;3;4;200;Cu;
 29;4;4;200;G;
 29;5;4;150;G;
@@ -1052,7 +1052,7 @@ row;position;condition;heigth;species;notes
 29;7;3;150;Cu;
 29;8;3;40;G;
 29;9;3;30;G;
-29;10;2;15;G;Stamm senkrecht gespalten, lebt noch
+29;10;2;15;G;Trunk split vertically, still alive
 29;11;2;150;Cu;
 29;12;3;40;G;
 29;13;4;200;Cu;
@@ -1060,9 +1060,9 @@ row;position;condition;heigth;species;notes
 29;15;4;200;Cu;
 29;16;4;200;Cu;
 29;17;3;100;L;
-29;18;2;10;G;Stummel mit Blättern,   drübergemäht 
+29;18;2;10;G;Stub with leaves, mowed over 
 29;19;3;150;Y;
-29;20;4;200;Cu;Braucht Stock 
+29;20;4;200;Cu;Needs stick
 29;21;4;150;Y;
 29;22;3;100;Y;
 29;23;2;50;Y;
@@ -1072,63 +1072,62 @@ row;position;condition;heigth;species;notes
 29;27;3;200;Cu;
 29;28;4;200;G;
 29;29;4;150;G;
-29;30;0;;G;
+29;30;0;0;G;
 29;31;3;200;Cu;
 29;32;4;200;G;
 29;33;3;150;G;
-29;34;3;100;G;Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
-30;0;0;;P;
+29;34;3;100;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
 30;1;4;150;G;
 30;2;4;200;G;
 30;3;4;200;Cu;
 30;4;4;200;Cu;
 30;5;4;200;G;
-30;6;0;;G;Nicht gefunden, vmtl drübergemäht 
+30;6;0;0;G;Not found, probably mowed over 
 30;7;4;200;Cu;
 30;8;3;150;Cu;
-30;9;2;10;G;Stummel mit Blättern, drübergemäht 
+30;9;2;10;G;Stub with leaves, mowed over 
 30;10;3;200;Cu;
 30;11;4;200;Cu;
 30;12;3;70;Cu;
-30;13;3;50;L;Wiederbelebt 
-30;14;2;10;G;Stummel mit Blättern, drübergemäht 
+30;13;3;50;L;Revived 
+30;14;2;10;G;Stub with leaves, mowed over 
 30;15;3;200;Cu;
 30;16;3;100;Y;
 30;17;4;200;Y;
 30;18;2;100;Y;
 30;19;4;200;Cu;
 30;20;4;200;Cu;
-30;21;0;;Cu;
-30;22;;;Y;Altbestand (Yvyra pyta)
+30;21;0;0;Cu;
+30;22;;;Y;Old stock (Yvyra pyta)
 30;23;3;150;Cu;
 30;24;3;200;Cu;
-30;25;0;;G;Nicht gefunden 
+30;25;0;0;G;Not found 
 30;26;3;100;G;
 30;27;4;200;Cu;
 30;28;4;200;Cu;
 30;29;4;200;G;
-30;30;3;200;Cu;Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
+30;30;3;200;Cu;Neighbor's tree needs to be cut down (otherwise it will grow together)
 31;1;3;200;Cu;
 31;2;3;50;G;
 31;3;3;100;G;
 31;4;3;40;G;
-31;5;3;200;Cu;Braucht Stock 
+31;5;3;200;Cu;Needs stick
 31;6;4;200;Cu;
 31;7;4;200;Cu;
 31;8;4;200;Cu;
-31;9;0;;G;Nicht gefunden 
+31;9;0;0;G;Not found 
 31;10;3;150;L;
-31;11;2;10;G;Stummel mit Blättern, drübergemäht 
+31;11;2;10;G;Stub with leaves, mowed over 
 31;12;2;20;L;
 31;13;4;200;Cu;
-31;14;3;49;L;Altbestand daneben (Curupa'y)
-31;15;0;;L;Drübergemäht, Stängel und Blätter liegen daneben 
+31;14;3;49;L;Old stock right next to it (Curupa'y)
+31;15;0;0;L;mowed over, Stems and leaves are lying next to it 
 31;16;3;200;Cu;
 31;17;3;150;L;
 31;18;4;200;Cu;
 31;19;3;150;L;
 31;20;4;200;Cu;
-31;21;0;;L;Nicht gefunden, Vmtl drübergemäht,  Blätter liegen noch da 
+31;21;0;0;L;Not found, probably mowed over, Leaves are still lying there 
 31;22;3;150;Cu;
 31;23;3;150;L;
 31;24;2;150;L;
@@ -1138,7 +1137,7 @@ row;position;condition;heigth;species;notes
 32;2;4;200;Cu;
 32;3;4;200;Cu;
 32;4;3;50;L;
-32;5;2;10;G;Stummel mit Blättern,  drübergemäht 
+32;5;2;10;G;Stub with leaves, mowed over 
 32;6;3;200;Cu;
 32;7;3;100;Cu;
 32;8;3;40;G;
@@ -1147,35 +1146,35 @@ row;position;condition;heigth;species;notes
 32;11;3;150;L;
 32;12;3;100;G;
 32;13;4;200;Cu;
-32;14;0;;G;Altbestand direkt nebenan (Yvyra pyta)
-32;15;0;;L;Nicht gefunden 
+32;14;0;0;G;Old stock right next to it (Yvyra pyta)
+32;15;0;0;L;Not found 
 32;16;3;150;G;
-32;17;3;100;L;P >200 direkt dran 
+32;17;3;100;L;P >200cm next to it
 32;18;3;150;Cu;
 32;19;4;150;G;
 32;20;3;100;G;
 32;21;3;100;G;
 33;1;3;200;Cu;
-33;2;2;10;L;Stummel, drübergemäht,  Blätter liegen noch da 
+33;2;2;10;L;Stub, mowed over, Leaves are still lying there 
 33;3;4;150;Cu;
 33;4;2;50;G;
 33;5;2;50;L;
-33;6;0;;G;Stumpf, kahl, drübergemäht 
+33;6;0;0;G;Stub, Bald, mowed over 
 33;7;4;200;Cu;
 33;8;2;100;L;
 33;9;4;100;G;
-33;10;0;;L;
+33;10;0;0;L;
 33;11;3;200;Cu;
 33;12;3;200;Cu;
-33;13;4;150;G;Stock fehlt Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
-33;14;3;150;Cu;Stock fehlt Baum Nachbar muss abgesägt werden (wächst sonst zusammen) Altbestand direkt daneben (Paraiso)
-33;15;4;200;G;Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
-33;16;4;150;Ti;Altbestand daneben (Curupa'y)
-34;1;3;150;G;Stock fehlt
+33;13;4;150;G;Stick missing, Neighbor's tree needs to be cut down (otherwise it will grow together)
+33;14;3;150;Cu;Stick missing, Neighbor's tree needs to be cut down (otherwise it will grow together), Old stock right next to it (Paraiso)
+33;15;4;200;G;Neighbor's tree needs to be cut down (otherwise it will grow together)
+33;16;4;150;Ti;Old stock right next to it (Curupa'y)
+34;1;3;150;G;Stick missing
 34;2;3;200;Cu;
-34;3;3;100;L;Stock fehlt Altbestand daneben (Curupa'y)
-34;4;4;100;G;Stock fehlt Altbestand zwischen 4 u. 5 (Hovenia?) 
-34;5;3;150;G;Stock fehlt
-34;6;3;100;G;Stock fehlt Schnittspuren Altbestand direkt nebenan (Yvyra pyta)
-35;1;4;200;G;Stock fehlt
-35;2;3;200;Cu;Stock fehlt Baum Nachbar muss abgesägt werden (wächst sonst zusammen)
+34;3;3;100;L;Stick missing, Old stock right next to it (Curupa'y)
+34;4;4;100;G;Stick missing, Old stock beetween 4 u. 5 (Hovenia?) 
+34;5;3;150;G;Stick missin,g
+34;6;3;100;G;Stick missing, cut marks Old stock right next to it (Yvyra pyta)
+35;1;4;200;G;Stick missing
+35;2;3;200;Cu;Stick missing, Neighbor's tree needs to be cut down (otherwise it will grow together)

@@ -1,12 +1,12 @@
 row;position;condition;heigth;species;ants;locusts;notes
-1;1;3;20;Y;;;erholt sich
+1;1;3;20;Y;;;recovering
 1;2;3;50;G;;;
 1;3;3;40;Y;;;
 1;4;3;60;Cu;;;
 1;5;3;40;Y;;;
 1;6;3;60;Cu;;;
 1;7;3;40;Y;;;
-1;8;3;50;G;;;An gleicher Stelle wächst etwas anderes…
+1;8;3;50;G;;;Something else grows in the same place
 1;9;3;40;Y;;;
 1;10;3;40;G;;;
 1;11;3;30;Y;;;
@@ -14,18 +14,18 @@ row;position;condition;heigth;species;ants;locusts;notes
 1;13;3;30;Y;;;
 1;14;3;30;Y;;;
 1;15;3;40;Y;;;
-1;16;3;30;Y;;;2 Bäumchen nebeneinander, 1 später weg
+1;16;3;30;Y;;;2 trees next to each other, 1 removed later
 1;17;3;40;Y;;;
-1;18;2;15;P;;;erholt sich
+1;18;2;15;P;;;recovering
 1;19;3;40;Y;;;
 1;20;3;20;G;;;
 1;21;3;40;Cu;;;
 1;22;3;20;Y;;;
-1;23;3;30;G;;;Neue Bl. weniger stark befallen
+1;23;3;30;G;;;new leaves less severely affected
 1;24;3;20;Cu;;;
 1;25;4;50;U;;;
 1;26;3;40;G;;x;
-1;27;0;;P;;;nichts zu sehen
+1;27;0;0;P;;;nothing to see
 1;28;3;40;Y;;;
 1;29;3;40;G;;x;
 1;30;3;40;Cu;;;
@@ -46,7 +46,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 2;6;3;;Y;;;
 2;7;3;40;G;;;
 2;8;2;25;C;;;
-2;9;3;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+2;9;3;90;Cu;;;2 trees next to each other, 1 removed later
 2;10;3;20;Cu;;;
 2;11;3;30;Y;;;
 2;12;3;30;Cu;;;
@@ -59,13 +59,13 @@ row;position;condition;heigth;species;ants;locusts;notes
 2;19;2;25;P;x;;
 2;20;3;25;Y;;;
 2;21;3;20;P;;;
-2;22;0;;L;;;nichts zu sehen
+2;22;0;0;L;;;nothing to see
 2;23;3;30;P;;x;
 2;24;2;;Y;;;
 2;25;3;40;Y;;;
 2;26;3;20;L;;;
 2;27;2;30;Y;;;
-2;28;0;;P;;;
+2;28;0;0;P;;;
 2;29;3;40;Y;;;
 2;30;3;40;P;;;
 2;31;3;30;U;;;
@@ -80,62 +80,62 @@ row;position;condition;heigth;species;ants;locusts;notes
 3;1;4;90;Cu;;;
 3;2;3;30;Y;;;
 3;3;3;50;G;;;
-3;4;2;15;C;;;vermutlich tot
+3;4;2;15;C;;;presumed dead
 3;5;3;30;Y;;;
-3;6;0;;C;x;;
+3;6;0;0;C;x;;
 3;7;3;50;Cu;x;;
-3;8;3;30;Y;;;2 Bäumchen nebeneinander, 1 später weg
+3;8;3;30;Y;;;2 trees next to each other, 1 removed later
 3;9;3;40;G;;x;
-3;10;0;;P;;;
-3;11;2;20;C;;;erholt sich
-3;12;0;;?;;;
+3;10;0;0;P;;;
+3;11;2;20;C;;;recovering
+3;12;0;0;?;;;
 3;13;3;40;Cu;;;
-3;14;0;;?;;;
+3;14;0;0;?;;;
 3;15;3;40;Cu;;;
 3;16;3;30;G;;;
-3;17;2;10;L;;;Altbestand direkt daneben (?) erholt sich
+3;17;2;10;L;;;Old stock right next to it (?) recovering
 3;18;3;30;Y;;;
 3;19;3;40;Y;;;
 3;20;3;40;Y;;;
-3;21;0;;C;;;
+3;21;0;0;C;;;
 3;22;3;40;Y;;;
 3;23;3;40;Y;;;
 3;24;3;50;G;;;
 3;25;3;60;Cu;;;
 3;26;3;40;Y;;;
 3;27;3;40;U;;;
-3;28;3;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+3;28;3;60;Cu;;;2 trees next to each other, 1 removed later
 3;29;3;30;P;;;
 3;30;3;30;G;;;
 3;31;4;110;G;;;
 3;32;3;40;Y;;;
-3;33;2;20;L;;;Neue Bl. weniger stark befallen
-3;34;0;;?;;;
+3;33;2;20;L;;;new leaves less severely affected
+3;34;0;0;?;;;
 3;35;2;30;Y;;;
 3;36;3;30;P;x;;
 3;37;4;50;Cu;;;
 3;38;3;50;G;;;
-3;39;3;10;Y;;;erholt sich
+3;39;3;10;Y;;;recovering
 4;1;4;40;Y;;;
 4;2;3;40;G;;;
-4;3;4;;Cu;x;;2 Bäumchen nebeneinander, 1 später weg
+4;3;4;;Cu;x;;2 trees next to each other, 1 removed later
 4;4;3;30;Y;;;
-4;5;4;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+4;5;4;50;Cu;;;2 trees next to each other, 1 removed later
 4;6;4;70;Cu;x;;
 4;7;2;30;Y;;;
 4;8;3;20;P;;;
 4;9;2;;L;;;
 4;10;2;25;Y;;;
 4;11;3;40;G;;;
-4;12;2;20;Y;;;erholt sich
+4;12;2;20;Y;;;recovering
 4;13;2;15;Y;;;
 4;14;2;30;Y;;;
-4;15;;;;;;Altbestand (Yvyra pyta)
+4;15;;;;;;Old stock (Yvyra pyta)
 4;16;3;30;Y;;;
-4;17;0;;P;;;
+4;17;0;0;P;;;
 4;18;3;90;Cu;;;
-4;19;2;;L;;;erholt sich
-4;20;0;;P;;;
+4;19;2;;L;;;recovering
+4;20;0;0;P;;;
 4;21;2;3;P;;;
 4;22;3;40;Y;;;
 4;23;3;40;L;;;
@@ -151,7 +151,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 4;33;3;30;Y;;;
 4;34;2;30;Y;;;
 4;35;4;50;Cu;;;
-4;36;3;20;L;;;erholt sich
+4;36;3;20;L;;;recovering
 4;37;3;25;Y;;;
 4;38;4;70;L;;;
 4;39;3;30;P;;;
@@ -161,73 +161,73 @@ row;position;condition;heigth;species;ants;locusts;notes
 5;4;3;40;G;;;
 5;5;2;5;C;;;
 5;6;3;30;Y;;;
-5;7;3;15;C;;;erholt sich
+5;7;3;15;C;;;recovering
 5;8;3;30;G;;;
 5;9;2;20;P;;;
 5;10;3;30;G;;x;
 5;11;3;30;Y;;;
 5;12;3;30;L;;;
-5;13;0;;?;;;
+5;13;0;0;?;;;
 5;14;3;25;G;;;
-5;15;0;;P;;;
+5;15;0;0;P;;;
 5;16;4;100;Cu;;;
 5;17;4;60;Cu;;;
 5;18;3;20;L;;;
 5;19;3;30;Y;;;
 5;20;2;20;Y;;;
-5;21;2;20;P;;;erholt sich
+5;21;2;20;P;;;recovering
 5;22;3;40;Cu;;;
 5;23;3;40;Y;;;
 5;24;3;25;L;;;
-5;25;0;;P;;;
+5;25;0;0;P;;;
 5;26;3;20;L;;;
 5;27;2;25;C;;;
 5;28;3;40;G;;;
 5;29;3;20;L;;;
 5;30;2;20;C;;;
 5;31;3;30;Y;;;
-5;32;0;;P;;;
+5;32;0;0;P;;;
 5;33;3;15;L;;;
 5;34;2;;P;;;
 5;35;3;40;Y;;;
 5;36;2;15;L;;;
 5;37;4;60;Cu;;;
 5;38;3;30;Y;;;
-6;1;3;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+6;1;3;50;Cu;;;2 trees next to each other, 1 removed later
 6;2;3;25;Y;;;
 6;3;3;30;Y;;;
-6;4;3;20;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+6;4;3;20;Cu;;;2 trees next to each other, 1 removed later
 6;5;3;30;Y;;;
-6;6;0;;P;;;
+6;6;0;0;P;;;
 6;7;3;40;G;;;
-6;8;3;40;Y;;;erholt sich
+6;8;3;40;Y;;;recovering
 6;9;2;30;Y;;;
-6;10;2;20;P;;;erholt sich
+6;10;2;20;P;;;recovering
 6;11;3;30;U;;;
-6;12;0;;P;;;
+6;12;0;0;P;;;
 6;13;2;40;Y;;;
-6;14;0;;Y;;;
+6;14;0;0;Y;;;
 6;15;3;30;Y;;;
 6;16;3;30;Y;;;
 6;17;3;20;L;;;
 6;18;3;30;Y;;;
 6;19;3;25;U;;;
-6;20;2;20;L;;;erholt sich
-6;21;3;40;Y;;;2 Bäumchen nebeneinander, 1 später weg
+6;20;2;20;L;;;recovering
+6;21;3;40;Y;;;2 trees next to each other, 1 removed later
 6;22;3;30;L;;;
 6;23;3;50;Cu;;;
 6;24;3;40;Y;;;
 6;25;3;30;Y;;;
 6;26;3;30;Y;;;
-6;27;3;30;L;;;Neue Bl. weniger stark befallen
+6;27;3;30;L;;;new leaves less severely affected
 6;28;3;40;Y;;;
 6;29;3;50;Cu;;;
 6;30;3;30;Y;;;
-6;31;0;;L;;;
+6;31;0;0;L;;;
 6;32;3;30;Y;;;
 6;33;3;15;P;;x;
 6;34;3;40;Cu;;;
-6;35;0;;L;;;
+6;35;0;0;L;;;
 6;36;3;20;Y;;;
 6;37;4;100;Cu;x;;
 6;38;3;30;G;;;
@@ -240,23 +240,23 @@ row;position;condition;heigth;species;ants;locusts;notes
 7;7;3;40;Y;;;
 7;8;4;70;Cu;;;
 7;9;4;40;L;;;
-7;10;3;50;Cu;x;;2 Bäumchen nebeneinander, 1 später weg
+7;10;3;50;Cu;x;;2 trees next to each other, 1 removed later
 7;11;3;20;Y;;;
 7;12;3;25;Y;;;
-7;13;0;;Y;;;
+7;13;0;0;Y;;;
 7;14;3;25;L;;;
 7;15;3;40;Y;;;
 7;16;3;20;P;;;
 7;17;3;30;L;;;
 7;18;3;25;G;;x;
 7;19;3;40;Cu;;;
-7;20;2;15;Y;;;erholt sich
-7;21;2;20;G;;;erholt sich
-7;22;3;40;Y;;;Schnittspuren
+7;20;2;15;Y;;;recovering
+7;21;2;20;G;;;recovering
+7;22;3;40;Y;;;cut marks
 7;23;3;40;Y;;;
 7;24;2;40;Y;;;
 7;25;3;50;G;;;
-7;26;2;15;L;;;Neue Bl. weniger stark befallen
+7;26;2;15;L;;;new leaves less severely affected
 7;27;3;40;Y;;;
 7;28;3;30;P;;x;
 7;29;3;40;Y;;;
@@ -264,20 +264,20 @@ row;position;condition;heigth;species;ants;locusts;notes
 7;31;2;25;Y;;;
 7;32;4;70;Cu;;;
 7;33;3;30;Y;;;
-7;34;2;25;Y;;;erholt sich
+7;34;2;25;Y;;;recovering
 7;35;3;40;Cu;;;
-7;36;0;;?;;;nichts zu sehen
-7;37;0;;?;;;
+7;36;0;0;?;;;nothing to see
+7;37;0;0;?;;;
 7;38;3;25;G;;x;
 8;1;3;30;G;;x;
 8;2;3;25;Y;;;
 8;3;2;20;C;;;
 8;4;3;40;Y;;;
-8;5;2;5;Y;;;erholt sich
-8;6;0;;P;;;
+8;5;2;5;Y;;;recovering
+8;6;0;0;P;;;
 8;7;2;30;L;x;;
-8;8;2;20;P;x;;erholt sich
-8;9;2;30;Y;x;;erholt sich
+8;8;2;20;P;x;;recovering
+8;9;2;30;Y;x;;recovering
 8;10;3;40;Y;;;
 8;11;4;40;U;;;
 8;12;3;20;P;;;
@@ -285,8 +285,8 @@ row;position;condition;heigth;species;ants;locusts;notes
 8;14;3;40;Y;;;
 8;15;3;25;G;;;
 8;16;3;20;G;;;
-8;17;3;15;L;;;erholt sich
-8;18;0;;P;;;
+8;17;3;15;L;;;recovering
+8;18;0;0;P;;;
 8;19;3;20;L;;;
 8;20;3;50;U;;;
 8;21;3;30;Y;x;;
@@ -296,7 +296,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 8;25;3;30;Y;;;
 8;26;3;30;Y;;;
 8;27;2;30;G;;;
-8;28;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+8;28;4;90;Cu;;;2 trees next to each other, 1 removed later
 8;29;4;60;G;;;
 8;30;3;40;Y;;;
 8;31;3;40;G;;x;
@@ -307,10 +307,10 @@ row;position;condition;heigth;species;ants;locusts;notes
 8;36;3;30;U;;;
 8;37;4;70;Cu;x;;
 8;38;3;30;Y;;;
-9;1;4;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+9;1;4;60;Cu;;;2 trees next to each other, 1 removed later
 9;2;3;30;Y;;;
 9;3;3;40;G;;;
-9;4;4;80;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+9;4;4;80;Cu;;;2 trees next to each other, 1 removed later
 9;5;3;40;Y;;;
 9;6;3;40;U;;;
 9;7;3;20;G;x;;
@@ -323,53 +323,53 @@ row;position;condition;heigth;species;ants;locusts;notes
 9;14;3;40;Y;;;
 9;15;3;15;L;;;
 9;16;3;40;Y;;;
-9;17;3;20;P;;;Altbestand direkt nebenan (Yvyra pyta)
+9;17;3;20;P;;;Old stock right next to it (Yvyra pyta)
 9;18;3;20;L;;;
 9;19;3;30;G;;;
 9;20;3;20;L;;;
-9;21;2;15;L;;;erholt sich
+9;21;2;15;L;;;recovering
 9;22;3;20;P;;;
 9;23;3;25;G;;;
 9;24;3;20;U;;;
 9;25;3;40;Cu;;;
-9;26;0;;P;;;
+9;26;0;0;P;;;
 9;27;3;30;Y;;;
 9;28;3;40;Y;;;
 9;29;3;40;Y;;;
-9;30;3;20;L;;;Neue Bl. weniger stark befallen
-9;31;0;;P;;;
+9;30;3;20;L;;;new leaves less severely affected
+9;31;0;0;P;;;
 9;32;3;30;Y;;;
-9;33;0;;P;;;
-9;34;3;20;L;;;Neue Bl. weniger stark befallen
+9;33;0;0;P;;;
+9;34;3;20;L;;;new leaves less severely affected
 9;35;2;20;Y;x;;
 9;36;3;40;G;;;
 9;37;2;30;Y;;;
 9;38;3;40;G;;;
 10;1;3;40;Y;;;
 10;2;3;30;G;;;
-10;3;3;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+10;3;3;60;Cu;;;2 trees next to each other, 1 removed later
 10;4;3;50;G;;;
 10;5;3;30;Y;;;
 10;6;3;40;G;;;
 10;7;3;30;Y;;;
 10;8;2;20;Y;;;
 10;9;3;30;Y;;;
-10;10;2;30;Y;;;Altbestand direkt nebenan (Yvyra pyta)
+10;10;2;30;Y;;;Old stock right next to it (Yvyra pyta)
 10;11;4;120;Cu;;;
 10;12;3;50;G;x;;
-10;13;3;30;Y;;;Altbestand direkt nebenan (Yvyra pyta)
+10;13;3;30;Y;;;Old stock right next to it (Yvyra pyta)
 10;14;3;50;G;;;
 10;15;3;30;Y;;;
 10;16;3;20;L;;;
 10;17;3;25;P;;;
-10;18;0;;Y;;;
+10;18;0;0;Y;;;
 10;19;4;40;U;;;
 10;20;4;70;Y;;;
 10;21;3;30;Y;;;
 10;22;4;60;Cu;;;
 10;23;3;30;Y;;;
 10;24;3;40;Cu;;;
-10;25;2;25;L;;;Neue Bl. weniger stark befallen
+10;25;2;25;L;;;new leaves less severely affected
 10;26;3;40;Y;;;
 10;27;3;30;G;;;
 10;28;3;30;Y;;;
@@ -381,7 +381,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 10;34;3;50;G;;;
 10;35;3;40;Cu;;;
 10;36;3;25;L;;;
-10;37;0;;P;;;
+10;37;0;0;P;;;
 11;1;3;30;Y;;;
 11;2;4;50;Y;;;
 11;3;4;110;Cu;;;
@@ -389,24 +389,24 @@ row;position;condition;heigth;species;ants;locusts;notes
 11;5;3;30;Y;;;
 11;6;3;40;P;;;
 11;7;4;70;Cu;;;
-11;8;0;;P;;;
+11;8;0;0;P;;;
 11;9;3;10;P;;;
-11;10;;;Y;;;Altbestand (Yvyra pyta)
+11;10;;;Y;;;Old stock (Yvyra pyta)
 11;11;3;40;Cu;;;
 11;12;3;30;L;;;
 11;13;3;40;Cu;;;
 11;14;3;25;Y;;;
 11;15;3;15;P;;;
 11;16;3;30;Y;;;
-11;17;2;10;L;;;2 Bäumchen nebeneinander, 1 später weg
-11;18;3;20;P;;;erholt sich
-11;19;0;;P;;;
+11;17;2;10;L;;;2 trees next to each other, 1 removed later
+11;18;3;20;P;;;recovering
+11;19;0;0;P;;;
 11;20;3;30;Y;;;
 11;21;3;20;P;;;
 11;22;3;25;P;;;
 11;23;3;30;Y;;;
-11;24;3;50;Cu;;;Altbestand direkt nebenan (Yvyra pyta)
-11;25;4;60;Cu;;;Altbestand direkt nebenan (Yvyra pyta)
+11;24;3;50;Cu;;;Old stock right next to it (Yvyra pyta)
+11;25;4;60;Cu;;;Old stock right next to it (Yvyra pyta)
 11;26;3;25;Y;;;
 11;27;4;50;Cu;;;
 11;28;2;15;L;;;
@@ -420,8 +420,8 @@ row;position;condition;heigth;species;ants;locusts;notes
 11;36;3;30;Y;;;
 11;37;2;30;P;x;;
 11;38;3;20;P;;;
-11;39;2;15;L;;;erholt sich
-12;1;3;30;L;;;Neue Bl. weniger stark befallen
+11;39;2;15;L;;;recovering
+12;1;3;30;L;;;new leaves less severely affected
 12;2;3;30;G;;;
 12;3;3;40;G;;x;
 12;4;3;20;G;;;
@@ -432,26 +432,26 @@ row;position;condition;heigth;species;ants;locusts;notes
 12;9;3;15;P;;;
 12;10;2;25;L;;;
 12;11;4;50;Cu;;;
-12;12;2;15;Y;x;;2 Bäumchen nebeneinander, 1 später weg
+12;12;2;15;Y;x;;2 trees next to each other, 1 removed later
 12;13;3;20;L;;;
 12;14;3;50;Cu;;;
-12;15;3;15;P;;;erholt sich
+12;15;3;15;P;;;recovering
 12;16;3;50;G;;;
 12;17;3;80;Cu;;;
 12;18;3;30;Y;;;
 12;19;3;20;P;x;x;
 12;20;2;5;Y;;;
 12;21;3;25;P;;x;
-12;22;2;15;P;;;erholt sich
+12;22;2;15;P;;;recovering
 12;23;3;30;Y;;;
 12;24;4;70;Cu;;;
-12;25;2;15;L;;;erholt sich
+12;25;2;15;L;;;recovering
 12;26;3;15;L;;;
 12;27;3;30;U;;;
 12;28;3;25;L;;;
 12;29;3;40;G;;;
-12;30;3;25;Cu;x;;Altbestand direkt nebenan (Yvyra pyta)
-12;31;2;5;P;;;erholt sich
+12;30;3;25;Cu;x;;Old stock right next to it (Yvyra pyta)
+12;31;2;5;P;;;recovering
 12;32;3;30;G;;x;
 12;33;3;40;Cu;;;
 12;34;3;30;Y;;;
@@ -465,7 +465,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 13;5;3;30;G;;;
 13;6;3;40;Y;;;
 13;7;3;15;L;;;
-13;8;0;;P;;;nichts zu sehen
+13;8;0;0;P;;;nothing to see
 13;9;4;60;Cu;;;
 13;10;3;25;P;;x;
 13;11;3;30;Y;;;
@@ -483,13 +483,13 @@ row;position;condition;heigth;species;ants;locusts;notes
 13;23;3;25;L;;;
 13;24;3;30;Y;;;
 13;25;3;60;G;;;
-13;26;2;20;P;;;erholt sich
+13;26;2;20;P;;;recovering
 13;27;3;25;Y;;;
-13;28;3;30;Y;;;Altbestand direkt daneben (Paraiso)
+13;28;3;30;Y;;;Old stock right next to it (Paraiso)
 13;29;3;30;Cu;;;
-13;30;4;40;U;x;;Altbestand direkt nebenan (Yvyra pyta)
+13;30;4;40;U;x;;Old stock right next to it (Yvyra pyta)
 13;31;2;30;Y;;;
-13;32;0;;P;;;
+13;32;0;0;P;;;
 13;33;3;30;Y;;;
 13;34;3;50;Cu;;;
 13;35;3;30;Y;;;
@@ -503,13 +503,13 @@ row;position;condition;heigth;species;ants;locusts;notes
 14;6;3;30;G;;;
 14;7;3;30;Cu;;;
 14;8;3;25;G;;;
-14;9;0;;P;;;
-14;10;4;80;Cu;x;;2 Bäumchen nebeneinander, 1 später weg
-14;11;3;25;L;;;Neue Bl. weniger stark befallen
+14;9;0;0;P;;;
+14;10;4;80;Cu;x;;2 trees next to each other, 1 removed later
+14;11;3;25;L;;;new leaves less severely affected
 14;12;3;30;Y;;;
 14;13;3;50;G;;;
 14;14;3;30;Y;;;
-14;15;0;;P;;;
+14;15;0;0;P;;;
 14;16;2;25;Y;;;
 14;17;3;20;L;;;
 14;18;3;50;G;;;
@@ -533,46 +533,46 @@ row;position;condition;heigth;species;ants;locusts;notes
 14;36;3;30;Y;;;
 14;37;4;40;Y;;;
 15;1;3;25;P;;x;
-15;2;0;;Y;;;
+15;2;0;0;Y;;;
 15;3;4;30;U;;;
 15;4;3;30;Cu;;;
-15;5;3;25;L;x;;Neue Bl. weniger stark befallen
+15;5;3;25;L;x;;new leaves less severely affected
 15;6;4;40;U;;;
 15;7;3;25;G;;;
 15;8;3;30;Y;;;
-15;9;0;;P;;;
+15;9;0;0;P;;;
 15;10;3;25;U;;;
 15;11;3;25;Y;;;
 15;12;3;20;L;;;
 15;13;3;30;G;;;
-15;14;3;30;L;;;Neue Bl. weniger stark befallen
+15;14;3;30;L;;;new leaves less severely affected
 15;15;4;20;L;;;
 15;16;2;30;G;;;
 15;17;4;120;Cu;;;
-15;18;2;15;P;;;erholt sich
-15;19;0;;P;;;
+15;18;2;15;P;;;recovering
+15;19;0;0;P;;;
 15;20;3;30;G;;;
-15;21;3;20;Cu;;;Altbestand direkt nebenan (Yvyra pyta)
+15;21;3;20;Cu;;;Old stock right next to it (Yvyra pyta)
 15;22;3;30;G;;;
-15;23;2;3;Y;;;erholt sich
-15;24;0;;P;;;
+15;23;2;3;Y;;;recovering
+15;24;0;0;P;;;
 15;25;2;5;L;;;
 15;26;3;25;G;;;
 15;27;3;25;P;;;
 15;28;2;25;L;;;
 15;29;3;25;U;;;
-15;30;0;;Y;;;nichts zu sehen
+15;30;0;0;Y;;;nothing to see
 15;31;4;60;Cu;;;
 15;32;3;50;G;x;;
 15;33;4;30;P;x;;
 15;34;3;30;Y;;;
 15;35;3;30;P;;;
-15;36;3;25;Y;;;erholt sich
-15;37;2;15;Cu;;;Altbestand daneben (Curupa'y)
+15;36;3;25;Y;;;recovering
+15;37;2;15;Cu;;;Old stock next to it (Curupa'y)
 16;1;3;30;G;;x;
 16;2;3;30;G;;x;
-16;3;3;80;Cu;x;;2 Bäumchen nebeneinander, 1 später weg
-16;4;3;20;L;;;Neue Bl. weniger stark befallen
+16;3;3;80;Cu;x;;2 trees next to each other, 1 removed later
+16;4;3;20;L;;;new leaves less severely affected
 16;5;3;30;Y;;;
 16;6;3;30;P;;;
 16;7;4;40;Y;;;
@@ -582,17 +582,17 @@ row;position;condition;heigth;species;ants;locusts;notes
 16;11;3;30;G;;;
 16;12;4;25;C;;;
 16;13;3;30;Y;;;
-16;14;3;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
-16;15;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+16;14;3;60;Cu;;;2 trees next to each other, 1 removed later
+16;15;4;90;Cu;;;2 trees next to each other, 1 removed later
 16;16;3;40;Y;;;
 16;17;4;40;P;;;
 16;18;3;25;G;;;
 16;19;3;30;G;;;
 16;20;3;50;Cu;;;
-16;21;0;;P;;;Altbestand direkt nebenan (Yvyra pyta)
+16;21;0;0;P;;;Old stock right next to it (Yvyra pyta)
 16;22;3;30;G;;;
-16;23;2;5;P;;;erholt sich
-16;24;0;;P;;;nichts zu sehen
+16;23;2;5;P;;;recovering
+16;24;0;0;P;;;nothing to see
 16;25;4;40;U;;;
 16;26;3;30;L;x;;
 16;27;3;15;L;;;
@@ -601,21 +601,21 @@ row;position;condition;heigth;species;ants;locusts;notes
 16;30;3;15;L;;;
 16;31;3;20;L;;;
 16;32;3;25;L;;;
-16;33;0;;Y;;;nichts zu sehen
+16;33;0;0;Y;;;nothing to see
 16;34;4;40;G;;;
 16;35;3;30;Y;;;
-16;36;3;25;P;x;;Neue Bl. weniger stark befallen
+16;36;3;25;P;x;;new leaves less severely affected
 16;37;3;25;Y;;;
 17;1;4;40;Y;;;
 17;2;3;30;G;;;
 17;3;3;30;G;;;
 17;4;4;60;Cu;x;;
-17;5;0;;P;;;nichts zu sehen
+17;5;0;0;P;;;nothing to see
 17;6;3;30;Y;;;
 17;7;4;90;Cu;;;
-17;8;0;;P;;;
+17;8;0;0;P;;;
 17;9;4;110;Cu;;;
-17;10;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+17;10;4;90;Cu;;;2 trees next to each other, 1 removed later
 17;11;3;40;P;;;
 17;12;4;50;L;;;
 17;13;3;15;P;;;
@@ -626,7 +626,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 17;18;3;40;Cu;;;
 17;19;3;20;L;;;
 17;20;3;40;G;;;
-17;21;3;25;P;;;erholt sich
+17;21;3;25;P;;;recovering
 17;22;3;30;Y;;;
 17;23;4;50;G;;;
 17;24;4;40;L;;;
@@ -644,18 +644,18 @@ row;position;condition;heigth;species;ants;locusts;notes
 17;36;3;25;L;x;x;
 17;37;4;50;P;;;
 18;1;3;30;L;;;
-18;2;3;60;Cu;x;;2 Bäumchen nebeneinander, 1 später weg
+18;2;3;60;Cu;x;;2 trees next to each other, 1 removed later
 18;3;3;30;G;x;;
-18;4;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+18;4;4;90;Cu;;;2 trees next to each other, 1 removed later
 18;5;4;100;Cu;;;
 18;6;3;30;Y;;;
 18;7;3;25;L;;;
 18;8;4;160;Cu;;;
 18;9;3;30;U;;;
-18;10;0;;C;;;
-18;11;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+18;10;0;0;C;;;
+18;11;4;90;Cu;;;2 trees next to each other, 1 removed later
 18;12;3;25;L;;;
-18;13;3;15;P;;;erholt sich
+18;13;3;15;P;;;recovering
 18;14;3;30;Y;;;
 18;15;4;30;L;;;
 18;16;4;40;L;;;
@@ -663,28 +663,28 @@ row;position;condition;heigth;species;ants;locusts;notes
 18;18;3;30;Y;;;
 18;19;3;25;G;;;
 18;20;3;40;Y;;;
-18;21;4;70;L;;;Neue Bl. weniger stark befallen
-18;22;3;30;P;;;erholt sich
+18;21;4;70;L;;;new leaves less severely affected
+18;22;3;30;P;;;recovering
 18;23;3;50;P;;;
-18;24;0;;P;;;
+18;24;0;0;P;;;
 18;25;3;30;Y;;;
 18;26;2;30;Y;;;
 18;27;4;30;P;;;
 18;28;3;30;L;x;;
 18;29;4;40;Y;;;
-18;30;3;30;Y;;;Altbestand direkt nebenan (Yvyra pyta)
+18;30;3;30;Y;;;Old stock right next to it (Yvyra pyta)
 18;31;3;30;Y;;;
 18;32;3;30;L;x;;
 18;33;3;40;G;;;
 18;34;3;30;L;;x;
-18;35;0;;L;;;nichts zu sehen
+18;35;0;0;L;;;nothing to see
 18;36;4;40;L;;;
 18;37;3;25;L;;;
 19;1;2;;L;;;
-19;2;4;70;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+19;2;4;70;Cu;;;2 trees next to each other, 1 removed later
 19;3;3;25;G;;;
-19;4;2;5;P;;;erholt sich
-19;5;0;;P;;;
+19;4;2;5;P;;;recovering
+19;5;0;0;P;;;
 19;6;3;50;Cu;;;
 19;7;3;40;G;;x;
 19;8;3;40;G;;;
@@ -699,7 +699,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 19;17;3;30;Y;;;
 19;18;2;25;Y;;;
 19;19;3;30;L;;;
-19;20;0;;Y;;;
+19;20;0;0;Y;;;
 19;21;3;30;Y;;;
 19;22;4;50;Y;;;
 19;23;3;30;Y;;;
@@ -707,7 +707,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 19;25;4;30;Y;;;
 19;26;3;30;P;;;
 19;27;4;50;Y;;;
-19;28;0;;P;;;
+19;28;0;0;P;;;
 19;29;3;30;Y;;;
 19;30;4;100;Cu;;;
 19;31;2;10;L;;;
@@ -726,11 +726,11 @@ row;position;condition;heigth;species;ants;locusts;notes
 20;7;3;40;Y;;;
 20;8;2;5;P;;;
 20;9;3;30;Y;;;
-20;10;2;5;Y;;;erholt sich
+20;10;2;5;Y;;;recovering
 20;11;2;25;G;;;
-20;12;4;30;L;;;2 Bäumchen nebeneinander, 1 später weg Neue Bl. weniger stark befallen
-20;13;2;20;P;x;;erholt sich
-20;14;2;10;Y;;;erholt sich
+20;12;4;30;L;;;2 trees next to each other, 1 removed later new leaves less severely affected
+20;13;2;20;P;x;;recovering
+20;14;2;10;Y;;;recovering
 20;15;3;30;Y;;;
 20;16;3;30;P;;;
 20;17;3;30;Y;;;
@@ -739,16 +739,16 @@ row;position;condition;heigth;species;ants;locusts;notes
 20;20;2;30;Y;;;
 20;21;3;30;L;;;
 20;22;2;25;Y;;;
-20;23;0;;P;;;
+20;23;0;0;P;;;
 20;24;3;30;Y;;;
 20;25;3;30;P;;x;
 20;26;3;40;G;;;
 20;27;3;20;Y;;;
 20;28;3;30;L;;;
-20;29;2;25;Y;;;Altbestand daneben (Curupa'y)
+20;29;2;25;Y;;;Old stock right next to it (Curupa'y)
 20;30;4;90;Cu;;;
 20;31;2;25;C;;;
-20;32;3;30;L;;;Neue Bl. weniger stark befallen
+20;32;3;30;L;;;new leaves less severely affected
 20;33;3;30;Y;;;
 20;34;4;50;G;;;
 20;35;3;30;Y;;;
@@ -756,7 +756,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 20;37;3;60;Cu;;;
 21;1;3;40;Y;;;
 21;2;4;50;L;;;
-21;3;3;70;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+21;3;3;70;Cu;;;2 trees next to each other, 1 removed later
 21;4;3;40;Y;;;
 21;5;3;30;P;;;
 21;6;3;40;L;;;
@@ -770,30 +770,30 @@ row;position;condition;heigth;species;ants;locusts;notes
 21;14;4;100;Cu;;;
 21;15;3;20;C;;;
 21;16;2;30;Y;;;
-21;17;3;20;L;;;2 Bäumchen nebeneinander, 1 später weg erholt sich
+21;17;3;20;L;;;2 trees next to each other, 1 removed later recovering
 21;18;3;30;G;;;
 21;19;2;30;Y;;;
 21;20;4;60;L;;;
-21;21;3;80;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+21;21;3;80;Cu;;;2 trees next to each other, 1 removed later
 21;22;3;30;Y;;;
-21;23;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+21;23;4;90;Cu;;;2 trees next to each other, 1 removed later
 21;24;3;30;G;;;
 21;25;4;80;Cu;;;
 21;26;3;30;Y;;;
 21;27;4;90;Cu;;;
 21;28;3;30;Y;;;
-21;29;3;40;G;;;Altbestand direkt daneben (?)
+21;29;3;40;G;;;Old stock right next to it (?)
 21;30;3;30;Y;;;
-21;31;3;30;L;;;Neue Bl. weniger stark befallen
-21;32;2;30;Y;;;erholt sich
-21;33;0;;?;;;nichts zu sehen
+21;31;3;30;L;;;new leaves less severely affected
+21;32;2;30;Y;;;recovering
+21;33;0;0;?;;;nothing to see
 21;34;3;30;Y;;;
 21;35;3;30;L;x;;
-21;36;4;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+21;36;4;50;Cu;;;2 trees next to each other, 1 removed later
 21;37;3;40;G;;;
 22;1;3;40;G;;;
 22;2;4;50;P;;;
-22;3;2;30;P;;;2 Bäumchen nebeneinander, 1 später weg
+22;3;2;30;P;;;2 trees next to each other, 1 removed later
 22;4;4;80;L;;;
 22;5;3;70;Cu;;;
 22;6;3;50;Cu;;;
@@ -812,14 +812,14 @@ row;position;condition;heigth;species;ants;locusts;notes
 22;19;4;30;L;;;
 22;20;3;30;G;;;
 22;21;3;30;G;x;x;
-22;22;2;15;L;;;2 Bäumchen nebeneinander, 1 später weg erholt sich
+22;22;2;15;L;;;2 trees next to each other, 1 removed later recovering
 22;23;4;50;L;;;
 22;24;3;30;Y;;;
 22;25;2;30;Y;;;
 22;26;3;40;Y;;;
 22;27;3;30;G;;;
-22;28;2;15;L;x;;2 Bäumchen nebeneinander, 1 später weg erholt sich
-22;29;2;30;P;x;;erholt sich
+22;28;2;15;L;x;;2 trees next to each other, 1 removed later recovering
+22;29;2;30;P;x;;recovering
 22;30;3;30;Y;;;
 22;31;4;80;Cu;;;
 22;32;4;60;Y;;;
@@ -828,7 +828,7 @@ row;position;condition;heigth;species;ants;locusts;notes
 22;35;3;30;Y;;;
 22;36;4;50;Y;;;
 23;1;4;40;Y;;;
-23;2;0;;P;;;nichts zu sehen
+23;2;0;0;P;;;nothing to see
 23;3;3;30;Y;;;
 23;4;4;70;Cu;;;
 23;5;3;60;Cu;;;
@@ -840,9 +840,9 @@ row;position;condition;heigth;species;ants;locusts;notes
 23;11;3;40;Y;;;
 23;12;2;40;Y;;;
 23;13;3;40;Y;;;
-23;14;2;15;P;x;x;erholt sich
-23;15;0;;P;;;
-23;16;3;50;L;;;Neue Bl. weniger stark befallen
+23;14;2;15;P;x;x;recovering
+23;15;0;0;P;;;
+23;16;3;50;L;;;new leaves less severely affected
 23;17;3;50;Cu;;;
 23;18;3;40;L;;;
 23;19;3;40;G;;;
@@ -854,20 +854,20 @@ row;position;condition;heigth;species;ants;locusts;notes
 23;25;3;30;G;;;
 23;26;2;30;Y;;;
 23;27;3;30;G;;;
-23;28;3;40;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+23;28;3;40;Cu;;;2 trees next to each other, 1 removed later
 23;29;2;20;G;;;
 23;30;3;30;L;;;
 23;31;3;25;Y;;;
-23;32;;;;;;Altbestand (Yvyra pyta)
+23;32;;;;;;Old stock (Yvyra pyta)
 23;33;3;30;Y;;;
 23;34;3;40;Y;;;
 23;35;3;30;Y;;;
 23;36;3;40;L;;;
 23;37;3;40;L;;;
 24;1;2;;Y;;;
-24;2;3;15;C;;;erholt sich
-24;3;0;;P;;;
-24;4;0;;P;;;
+24;2;3;15;C;;;recovering
+24;3;0;0;P;;;
+24;4;0;0;P;;;
 24;5;3;80;Cu;;;
 24;6;3;30;Y;;;
 24;7;3;30;Y;;;
@@ -880,29 +880,29 @@ row;position;condition;heigth;species;ants;locusts;notes
 24;14;3;40;L;;;
 24;15;3;40;Y;;;
 24;16;4;40;Y;;;
-24;17;3;20;P;;;erholt sich
+24;17;3;20;P;;;recovering
 24;18;4;60;L;;;
 24;19;3;30;Y;;;
 24;20;3;40;L;;x;
 24;21;3;50;G;;;
-24;22;3;15;L;;;erholt sich
-24;23;2;5;P;;;erholt sich
-24;24;3;40;L;;;Neue Bl. weniger stark befallen
+24;22;3;15;L;;;recovering
+24;23;2;5;P;;;recovering
+24;24;3;40;L;;;new leaves less severely affected
 24;25;3;80;Cu;;;
 24;26;3;50;L;;;
 24;27;3;40;G;;;
 24;28;3;30;Y;;;
-24;29;0;;?;;;nichts zu sehen
-24;30;2;20;Cu;;;erholt sich
+24;29;0;0;?;;;nothing to see
+24;30;2;20;Cu;;;recovering
 24;31;3;30;Y;;;
 24;32;3;25;P;x;;
 24;33;3;50;L;;;
-24;34;0;;P;;;nichts zu sehen
+24;34;0;0;P;;;nothing to see
 24;35;3;30;L;;;
-24;36;0;;C;;;
+24;36;0;0;C;;;
 25;1;3;50;L;;;
 25;2;3;40;Y;;;
-25;3;3;40;G;x;;2 Bäumchen nebeneinander, 1 später weg
+25;3;3;40;G;x;;2 trees next to each other, 1 removed later
 25;4;3;50;Cu;;;
 25;5;3;30;P;;x;
 25;6;2;20;P;x;;
@@ -910,34 +910,34 @@ row;position;condition;heigth;species;ants;locusts;notes
 25;8;3;20;P;x;;
 25;9;4;100;Cu;x;;
 25;10;4;100;Cu;;;
-25;11;4;70;L;;;2 Bäumchen nebeneinander, 1 später weg
-25;12;0;;P;;;
+25;11;4;70;L;;;2 trees next to each other, 1 removed later
+25;12;0;0;P;;;
 25;13;3;30;L;;;
-25;14;2;10;L;;;erholt sich
-25;15;3;20;C;;;2 Bäumchen nebeneinander, 1 später weg
+25;14;2;10;L;;;recovering
+25;15;3;20;C;;;2 trees next to each other, 1 removed later
 25;16;2;20;P;;;
-25;17;0;;P;;;
+25;17;0;0;P;;;
 25;18;3;40;P;;x;
 25;19;4;80;L;;;
-25;20;2;15;L;;;erholt sich
+25;20;2;15;L;;;recovering
 25;21;3;40;G;;;
 25;22;3;40;L;;;
 25;23;3;40;G;;;
 25;24;3;50;G;;;
 25;25;3;40;P;;x;
-25;26;2;10;G;;;erholt sich
+25;26;2;10;G;;;recovering
 25;27;3;30;G;;;
 25;28;3;40;G;;;
 25;29;3;50;Cu;;;
 25;30;3;70;Cu;;;
 25;31;4;110;Cu;;;
 25;32;3;40;G;x;;
-25;33;0;;P;;;nichts zu sehen
-25;34;3;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+25;33;0;0;P;;;nothing to see
+25;34;3;50;Cu;;;2 trees next to each other, 1 removed later
 25;35;3;30;P;x;;
-26;1;4;90;Cu;;;Altbestand direkt nebenan (Yvyra pyta)
-26;2;0;;P;;;nichts zu sehen
-26;3;3;40;Y;;;2 Bäumchen nebeneinander, 1 später weg
+26;1;4;90;Cu;;;Old stock right next to it (Yvyra pyta)
+26;2;0;0;P;;;nothing to see
+26;3;3;40;Y;;;2 trees next to each other, 1 removed later
 26;4;4;60;P;x;x;
 26;5;4;30;C;;;
 26;6;3;50;P;;x;
@@ -956,18 +956,18 @@ row;position;condition;heigth;species;ants;locusts;notes
 26;19;3;40;L;;;
 26;20;4;160;Cu;;;
 26;21;3;30;Y;;;
-26;22;3;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+26;22;3;50;Cu;;;2 trees next to each other, 1 removed later
 26;23;3;40;G;;;
 26;24;4;50;Y;;;
 26;25;4;60;L;x;;
 26;26;3;40;P;x;;
 26;27;4;90;L;x;;
-26;28;3;60;Cu;;;Altbestand direkt nebenan (Yvyra pyta)
+26;28;3;60;Cu;;;Old stock right next to it (Yvyra pyta)
 26;29;3;30;G;;;
-26;30;3;20;L;;;2 Bäumchen nebeneinander, 1 später weg
+26;30;3;20;L;;;2 trees next to each other, 1 removed later
 26;31;3;30;G;;;
-26;32;3;50;Cu;;;2 Bäumchen nebeneinander, 1 später weg
-26;33;;;;;;Altbestand (Yvyra pyta)
+26;32;3;50;Cu;;;2 trees next to each other, 1 removed later
+26;33;;;;;;Old stock (Yvyra pyta)
 26;34;3;40;G;x;x;
 26;35;4;90;L;;;
 26;36;3;30;Y;;;
@@ -985,11 +985,11 @@ row;position;condition;heigth;species;ants;locusts;notes
 27;12;4;50;L;;;
 27;13;3;30;Y;;;
 27;14;3;25;P;x;;
-27;15;2;30;Y;;;erholt sich
+27;15;2;30;Y;;;recovering
 27;16;3;30;G;x;;
-27;17;3;20;P;;;erholt sich
+27;17;3;20;P;;;recovering
 27;18;4;70;L;;;
-27;19;3;20;P;;;erholt sich
+27;19;3;20;P;;;recovering
 27;20;3;40;Cu;;;
 27;21;3;30;Cu;;;
 27;22;3;40;G;;;
@@ -997,8 +997,8 @@ row;position;condition;heigth;species;ants;locusts;notes
 27;24;3;30;L;;;
 27;25;4;110;L;x;;
 27;26;3;100;Cu;;;
-27;27;0;;Y;;;
-27;28;0;;?;;;Altbestand direkt nebenan (Yvyra pyta)
+27;27;0;0;Y;;;
+27;28;0;0;?;;;Old stock right next to it (Yvyra pyta)
 27;29;3;25;Y;;;
 27;30;4;50;L;x;;
 27;31;3;60;G;;x;
@@ -1009,18 +1009,18 @@ row;position;condition;heigth;species;ants;locusts;notes
 27;36;3;40;G;x;;
 28;1;3;30;L;;;
 28;2;3;30;Y;;;
-28;3;4;70;L;;;2 Bäumchen nebeneinander, 1 später weg
+28;3;4;70;L;;;2 trees next to each other, 1 removed later
 28;4;3;50;G;;;
 28;5;3;40;L;;;
 28;6;3;30;Y;;;
 28;7;3;30;P;x;;
-28;8;3;40;G;;;Altbestand daneben (Curupa'y)
+28;8;3;40;G;;;Old stock right next to it (Curupa'y)
 28;9;3;30;G;;;
 28;10;3;30;C;;;
 28;11;3;40;L;;;
 28;12;3;60;Cu;;;
 28;13;3;30;G;;;
-28;14;4;110;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+28;14;4;110;Cu;;;2 trees next to each other, 1 removed later
 28;15;3;30;Y;;;
 28;16;3;30;P;x;x;
 28;17;3;30;Y;;;
@@ -1033,9 +1033,9 @@ row;position;condition;heigth;species;ants;locusts;notes
 28;24;3;60;Cu;;;
 28;25;3;40;Y;;;
 28;26;2;3;Cu;;;
-28;27;3;30;L;;;2 Bäumchen nebeneinander, 1 später weg
+28;27;3;30;L;;;2 trees next to each other, 1 removed later
 28;28;4;70;L;x;;
-28;29;;;;;;Altbestand (Curupa'y)
+28;29;;;;;;Old stock (Curupa'y)
 28;30;3;60;L;;;
 28;31;3;40;G;x;;
 28;32;3;50;G;x;;
@@ -1043,15 +1043,15 @@ row;position;condition;heigth;species;ants;locusts;notes
 28;34;3;80;Cu;;;
 28;35;3;30;Y;;;
 29;1;4;70;G;;;
-29;2;3;30;Cu;;;erholt sich
+29;2;3;30;Cu;;;recovering
 29;3;3;90;Cu;;;
 29;4;3;40;G;;;
 29;5;3;30;G;;;
 29;6;4;120;Cu;;;
-29;7;3;30;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+29;7;3;30;Cu;;;2 trees next to each other, 1 removed later
 29;8;3;40;G;;;
 29;9;3;30;G;;;
-29;10;2;15;G;;;erholt sich
+29;10;2;15;G;;;recovering
 29;11;3;50;Cu;;;
 29;12;3;30;G;;;
 29;13;3;80;Cu;;;
@@ -1072,14 +1072,13 @@ row;position;condition;heigth;species;ants;locusts;notes
 29;28;3;50;G;;;
 29;29;3;30;G;;;
 29;30;3;40;G;;;
-29;31;3;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+29;31;3;90;Cu;;;2 trees next to each other, 1 removed later
 29;32;3;50;G;;;
 29;33;3;50;G;;;
 29;34;3;40;G;x;;
-30;0;3;30;P;;;
 30;1;3;30;G;;;
 30;2;3;40;G;;;
-30;3;3;40;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+30;3;3;40;Cu;;;2 trees next to each other, 1 removed later
 30;4;3;70;Cu;;;
 30;5;4;60;G;;;
 30;6;3;30;G;;;
@@ -1089,17 +1088,17 @@ row;position;condition;heigth;species;ants;locusts;notes
 30;10;3;60;Cu;;;
 30;11;4;100;Cu;;;
 30;12;3;40;Cu;;;
-30;13;2;15;L;;;erholt sich
+30;13;2;15;L;;;recovering
 30;14;3;30;G;;;
 30;15;3;90;Cu;;;
-30;16;2;10;Y;;;erholt sich
-30;17;4;40;Y;;;2 Bäumchen nebeneinander, 1 später weg
+30;16;2;10;Y;;;recovering
+30;17;4;40;Y;;;2 trees next to each other, 1 removed later
 30;18;3;40;Y;;;
 30;19;3;60;Cu;;;
 30;20;4;110;Cu;;;
-30;21;3;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
-30;22;;;;;;Altbestand (Yvyra pyta)
-30;23;2;30;Cu;;;erholt sich
+30;21;3;60;Cu;;;2 trees next to each other, 1 removed later
+30;22;;;;;;Old stock (Yvyra pyta)
+30;23;2;30;Cu;;;recovering
 30;24;3;60;Cu;;;
 30;25;3;40;G;;;
 30;26;3;40;G;;;
@@ -1112,31 +1111,31 @@ row;position;condition;heigth;species;ants;locusts;notes
 31;3;3;40;G;x;;
 31;4;3;40;G;x;;
 31;5;4;100;Cu;;;
-31;6;4;90;Cu;;;2 Bäumchen nebeneinander, 1 später weg
-31;7;4;100;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+31;6;4;90;Cu;;;2 trees next to each other, 1 removed later
+31;7;4;100;Cu;;;2 trees next to each other, 1 removed later
 31;8;4;130;Cu;;;
 31;9;3;30;G;x;;
 31;10;3;30;L;x;x;
 31;11;3;40;G;x;;
 31;12;2;15;L;;;
 31;13;3;40;Cu;;;
-31;14;2;15;L;;x;Altbestand daneben (Curupa'y)
+31;14;2;15;L;;x;Old stock right next to it (Curupa'y)
 31;15;2;15;L;;;
 31;16;3;50;Cu;;;
 31;17;3;15;L;;;
 31;18;4;60;Cu;;;
-31;19;3;20;L;x;;2 Bäumchen nebeneinander, 1 später weg
-31;20;3;60;Cu;;;2 Bäumchen nebeneinander, 1 später weg
+31;19;3;20;L;x;;2 trees next to each other, 1 removed later
+31;20;3;60;Cu;;;2 trees next to each other, 1 removed later
 31;21;2;10;L;x;x;
-31;22;3;30;Cu;;;erholt sich
-31;23;3;25;L;x;;Neue Bl. weniger stark befallen
+31;22;3;30;Cu;;;recovering
+31;23;3;25;L;x;;new leaves less severely affected
 31;24;3;40;L;;;
 31;25;3;40;Cu;;;
 31;26;3;30;Cu;;;
 32;1;3;80;Cu;;;
 32;2;3;50;Cu;;;
 32;3;4;100;Cu;;;
-32;4;3;15;L;x;;erholt sich
+32;4;3;15;L;x;;recovering
 32;5;3;30;G;;;
 32;6;4;60;Cu;x;;
 32;7;3;25;Cu;x;;
@@ -1146,11 +1145,11 @@ row;position;condition;heigth;species;ants;locusts;notes
 32;11;3;20;L;;;
 32;12;3;30;G;;;
 32;13;4;70;Cu;;;
-32;14;3;30;G;;;Altbestand direkt nebenan (Yvyra pyta)
-32;15;2;15;L;;;Neue Bl. weniger stark befallen
+32;14;3;30;G;;;Old stock right next to it (Yvyra pyta)
+32;15;2;15;L;;;new leaves less severely affected
 32;16;3;30;G;;;
 32;17;3;40;L;;;
-32;18;2;10;Cu;;;erholt sich
+32;18;2;10;Cu;;;recovering
 32;19;4;50;G;;;
 32;20;3;50;G;x;;
 32;21;3;40;G;;;
@@ -1158,23 +1157,23 @@ row;position;condition;heigth;species;ants;locusts;notes
 33;2;2;20;L;x;x;
 33;3;3;60;Cu;;;
 33;4;3;25;G;;;
-33;5;2;20;L;;;erholt sich
+33;5;2;20;L;;;recovering
 33;6;3;30;G;;;
 33;7;3;50;Cu;x;;
-33;8;2;15;L;;;erholt sich
+33;8;2;15;L;;;recovering
 33;9;3;40;G;x;;
-33;10;2;3;L;;;erholt sich
+33;10;2;3;L;;;recovering
 33;11;3;40;Cu;;;
 33;12;3;40;Cu;;;
 33;13;3;40;G;x;;
 33;14;2;10;Cu;x;;
 33;15;4;60;G;;;
-33;16;0;;?;;;
+33;16;0;0;?;;;
 34;1;3;40;G;;;
 34;2;3;30;Cu;;;
-34;3;3;20;L;;;Altbestand daneben (Curupa'y)
-34;4;3;30;G;;;Altbestand zwischen 4 u. 5 (Hovenia?) 
+34;3;3;20;L;;;Old stock right next to it (Curupa'y)
+34;4;3;30;G;;;Old stock beetween 4 u. 5 (Hovenia?) 
 34;5;3;30;G;;;
-34;6;3;15;G;x;;Schnittspuren
-35;1;3;25;G;;;erholt sich
+34;6;3;15;G;x;;cut marks
+35;1;3;25;G;;;recovering
 35;2;2;10;Cu;;;

@@ -4,7 +4,7 @@ row;position;condition;height;species;ants;locusts;notes
 1;3;3;10;Y;;;
 1;4;3;10;Cu;;;
 1;5;3;10;Y;;;
-1;6; 3;10;Cu;;;
+1;6;3;10;Cu;;;
 1;7;3;10;Y;;;
 1;8;3;10;G;;x;
 1;9;3;10;Y;;;
@@ -29,7 +29,7 @@ row;position;condition;height;species;ants;locusts;notes
 1;28;3;10;Y;;;
 1;29;3;10;G;;x;
 1;30;3;10;Cu;;;
-1;31;3;10;Y;;;recovers,  stems and shoots
+1;31;3;10;Y;;;recovers, stems and shoots
 1;32;3;10;Y;;;
 1;33;3;10;U;x;;
 1;34;3;10;G;x;;
@@ -922,7 +922,7 @@ row;position;condition;height;species;ants;locusts;notes
 25;21;2;1;?;;;
 25;22;3;10;G;;;
 25;23;3;10;L;;;
-25;24; 3;10;G;;x;
+25;24;3;10;G;;x;
 25;25;3;10;G;;x;
 25;26;3;10;P;;;
 25;27;2;3;G;;;many shoots
@@ -1174,6 +1174,6 @@ row;position;condition;height;species;ants;locusts;notes
 34;3;3;10;L;;;
 34;4;3;10;G;;;
 34;5;3;10;G;;;
-34;6;2;1;G;;;new shoots,  2 leaves, cut marks
+34;6;2;1;G;;;new shoots, 2 leaves, cut marks
 35;1;1;10;G;;;tip dry, not cleaned!
 35;2;2;10;Cu;;;tip off, not cleaned!
