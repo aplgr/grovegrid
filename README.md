@@ -79,13 +79,6 @@ row;position;condition;height;species;notes
 | `-json-out` | *(empty)* | If set, also writes the raw data as JSON to this path |
 
 
-## Ideas
-
-* Optional color schemes
-* Export PNG/SVG from the HTML
-* Small `-serve` flag to share over LAN
-* Tunable condition binning strategies via CLI flags
-
 ## License
 
 MIT — see `LICENSE`.
