@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{TITLE}}</title>
+  <title>Heatmap Visualization</title>
   <style>
     body {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -91,16 +91,16 @@
     button:hover {
       border-color: #2c343b;
     }
+
+    /* Removed fixed positioning for export button */
   </style>
 </head>
 
 <body x-data="heatmapApp()">
   <header>
-    <div class="title">{{TITLE}}</div>
+    <div class="title">Heatmap Visualization</div>
 
-    <div class="legend" x-data x-init="(()=>{
-      // gradient colors are dynamic; we set them in JS later
-    })()">
+    <div class="legend" x-data x-init="(()=>{ /* gradient colors are dynamic; we set them in JS later */ })()">
       <span class="swatch" style="background:#222"></span> <span>no data</span>
       <span class="swatch" style="background:#555"></span> <span>0</span>
       <span class="grad" id="legend-grad"></span> <span id="legend-value">value ↑</span>
@@ -113,6 +113,7 @@
           <option x-text="m"></option>
         </template>
       </select>
+      <button id="exportPng" @click="exportPNG()">Export PNG</button>  <!-- Moved beside the select dropdown -->
       <button @click="next()">⟩</button>
 
       <input type="range" :min="0" :max="months.length-1" step="1" x-model.number="slider"
@@ -123,200 +124,261 @@
   <div id="chart"></div>
   <div class="footer" x-text="`${labels.size}: ${meta.size_min} – ${meta.size_max} | ${labels.value}`"></div>
 
-  <script id="payload" type="application/json">{{INLINE_JSON}}</script>
-
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 
   <script>
-    function heatmapApp() {
-      const inline = JSON.parse(document.getElementById('payload').textContent);
-      const meta = inline.meta;
-      const datasets = inline.datasets;
-      const months = meta.months;
-      const labels = meta.labels || { x: "X", y: "Y", value: "Value", size: "Size", extras: [] };
+  function heatmapApp() {
+    const jsonFolder = "json_data/";
+    const fileMap = {
+      "2023-04": "2023-04.json",
+      "2023-05": "2023-05.json",
+      "2023-10": "2023-10.json",
+      "2024-05": "2024-05.json",
+      "2025-03": "2025-03.json",
+      "2025-10": "2025-10.json"
+    };
 
-      let chart;
+    const months = Object.keys(fileMap);
 
-      // apply dynamic gradient colors if provided
-      (function initLegendGradient() {
-        const gradEl = document.getElementById("legend-grad");
-        const g = (meta.grad_colors || []);
-        if (gradEl && g.length) {
-          gradEl.style.background = `linear-gradient(90deg, ${g.join(",")})`;
-        }
-        const lv = document.getElementById("legend-value");
-        if (lv) lv.textContent = (labels.value || "Value") + " ↑";
-      })();
+    let meta = {};
+    let datasets = {};
+    let labels = {
+      x: "Position",
+      y: "Row",
+      value: "Condition",
+      size: "Height",
+      extras: ["species", "ants", "locusts", "notes"]
+    };
 
-      function categories(n) {
-        return Array.from({ length: n }, (_, i) => (i + 1).toString());
-      }
+    async function loadData() {
+      datasets = {};
+      const allValues = [];
+      const allSizes = [];
+      let xMax = 0;
+      let yMax = 0;
 
-      function buildPoints(ds) {
-        // Build a dense raster of points with [x-1, y-1, value, size] and carry extras object
-        const map = new Map();
-        (ds.points || []).forEach(p => { map.set(p.x + '-' + p.y, p); });
-        const out = [];
-        for (let x = 1; x <= meta.x_max; x++) {
-          for (let y = 1; y <= meta.y_max; y++) {
-            const key = x + '-' + y;
-            const p = map.get(key);
-            const value = p ? Number(p.value) : -1;
-            const size = p ? Number(p.size) : 0;
-            out.push({
-              id: key,
-              value: [x - 1, y - 1, value, size],
-              extras: p ? (p.extras || {}) : {}
-            });
-          }
-        }
-        return out;
-      }
+      for (const month of months) {
+        try {
+          const response = await fetch(jsonFolder + fileMap[month]);
+          if (!response.ok) throw new Error(`Failed to load ${month}`);
+          const raw = await response.json();
 
-      function buildPieces(minPos, maxVal, gradColors, zeroColor, noDataColor) {
-        const pieces = [
-          { value: -1, label: 'no data', color: noDataColor },
-          { value: 0, label: '0', color: zeroColor }
-        ];
-        if (maxVal > 0 && minPos >= 0 && gradColors && gradColors.length > 0) {
-          const bins = gradColors.length;
-          const lo = (minPos > 0) ? minPos : 0.00001;
-          const step = (maxVal - lo) / bins || 1;
-          let start = lo;
-          for (let i = 0; i < bins; i++) {
-            const end = (i === bins - 1) ? maxVal : (lo + step * (i + 1));
-            const color = gradColors[i];
-            pieces.push({ gt: start - 1e-12, lte: end + 1e-12, color: color });
-            start = end;
-          }
-        }
-        return pieces;
-      }
-
-      function buildOption(monthKey) {
-        const ds = datasets[monthKey];
-        const heat = (ds.heat || []).map(d => [d[0] - 1, d[1] - 1, Number(d[2])]);
-        const points = buildPoints(ds);
-        const pieces = buildPieces(meta.value_min_pos, meta.value_max, meta.grad_colors, meta.zero_color, meta.nodata_color);
-
-        return {
-          backgroundColor: '#0b0e11',
-          animationDurationUpdate: 250,
-          animationEasingUpdate: 'linear',
-          tooltip: {
-            trigger: 'item',
-            formatter: function (params) {
-              if (params.seriesType === 'heatmap') {
-                const z = Number(params.value[2]);
-                if (z < 0) return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>no data`;
-                if (z === 0) return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>${labels.value}: 0`;
-                return `${labels.x} ${params.value[0] + 1}, ${labels.y} ${params.value[1] + 1}<br/>${labels.value}: ${z}`;
-              } else if (params.seriesType === 'scatter') {
-                const v = params.value;
-                const z = Number(v[2]);
-                const g = Number(params.data.value[3]);
-                const lines = [
-                  `${labels.x} ${v[0] + 1}, ${labels.y} ${v[1] + 1}`,
-                  (z < 0) ? `no data` : `${labels.value}: ${z}`,
-                  `${labels.size}: ${g}`
-                ];
-                // extras (ordered by labels.extras)
-                if (labels.extras && labels.extras.length) {
-                  for (const h of labels.extras) {
-                    const val = params.data.extras?.[h];
-                    if (val !== undefined && val !== "") {
-                      lines.push(`${h}: ${val}`);
-                    }
-                  }
-                }
-                return lines.join('<br/>');
-              }
-              return '';
+          const points = raw.map(r => ({
+            x: Number(r.position),
+            y: Number(r.row),
+            value: Number(r.condition),
+            size: Number(r.height),
+            extras: {
+              species: r.species,
+              ants: r.ants,
+              locusts: r.locusts,
+              notes: r.notes
             }
-          },
-          grid: { left: 50, right: 20, top: 40, bottom: 40, containLabel: true },
-          xAxis: {
-            type: 'category',
-            data: categories(meta.x_max),
-            name: labels.x || 'X',
-            nameTextStyle: { color: '#9aa4ad' },
-            axisLine: { lineStyle: { color: '#44515c' } },
-            axisLabel: { color: '#cbd5dc' },
-            splitArea: { show: false },
-            splitLine: { show: false }
-          },
-          yAxis: {
-            type: 'category',
-            data: categories(meta.y_max),
-            name: labels.y || 'Y',
-            nameTextStyle: { color: '#9aa4ad' },
-            axisLine: { lineStyle: { color: '#44515c' } },
-            axisLabel: { color: '#cbd5dc' },
-            splitArea: { show: false },
-            splitLine: { show: false },
-            inverse: false
-          },
-          visualMap: [{
-            type: 'piecewise',
-            dimension: 2,
-            orient: 'horizontal',
-            right: 20,
-            top: 8,
-            show: false,
-            pieces: pieces,
-            seriesIndex: 0
-          }],
-          series: [
-            {
-              name: labels.value || 'Value',
-              type: 'heatmap',
-              data: heat,
-              animation: false,
-              label: { show: false },
-              itemStyle: { borderWidth: 1, borderColor: '#0b0e11' },
-              emphasis: { itemStyle: { shadowBlur: 3, shadowColor: 'rgba(255,255,255,.2)' } }
-            },
-            {
-              name: labels.size || 'Size',
-              type: 'scatter',
-              data: points,
-              animationDurationUpdate: 250,
-              animationEasingUpdate: 'linear',
-              symbolSize: function (val) {
-                const min = meta.size_min || 0;
-                const max = meta.size_max || 0;
-                if (max <= min) return 6;
-                const g = Number(val[3]);
-                const t = (g - min) / (max - min);
-                return Math.max(6, Math.min(28, 6 + t * 22));
-              },
-              itemStyle: { borderColor: '#000', borderWidth: 0.8 },
-              encode: { x: 0, y: 1 }
-            }
-          ]
-        };
+          }));
+
+          datasets[month] = { points };
+
+          points.forEach(p => {
+            allValues.push(p.value);
+            allSizes.push(p.size);
+            xMax = Math.max(xMax, p.x);
+            yMax = Math.max(yMax, p.y);
+          });
+        } catch (error) {
+          console.error(`Error loading ${month}:`, error);
+        }
       }
+
+      meta = {
+        months,
+        x_max: xMax,
+        y_max: yMax,
+        value_min_pos: Math.min(...allValues.filter(v => v > 0)),
+        value_max: Math.max(...allValues),
+        size_min: Math.min(...allSizes),
+        size_max: Math.max(...allSizes),
+        grad_colors: ["#d73027", "#fdae61", "#fee08b", "#a6d96a", "#1a9850"],
+        zero_color: "#555",
+        nodata_color: "#222",
+        labels
+      };
+
+      initLegendGradient();
+    }
+
+    function initLegendGradient() {
+      const gradEl = document.getElementById("legend-grad");
+      gradEl.style.background = `linear-gradient(90deg, ${meta.grad_colors.join(",")})`;
+      document.getElementById("legend-value").textContent = labels.value + " ↑";
+    }
+
+    function categories(n) {
+      return Array.from({ length: n }, (_, i) => (i + 1).toString());
+    }
+
+    function buildPoints(ds) {
+      const map = new Map();
+      ds.points.forEach(p => map.set(p.x + "-" + p.y, p));
+
+      const out = [];
+      for (let x = 1; x <= meta.x_max; x++) {
+        for (let y = 1; y <= meta.y_max; y++) {
+          const key = x + "-" + y;
+          const p = map.get(key);
+          out.push({
+            id: key,
+            value: [x - 1, y - 1, p ? p.value : -1, p ? p.size : 0],
+            extras: p ? p.extras : {}
+          });
+        }
+      }
+      return out;
+    }
+
+    function buildOption(monthKey) {
+      const ds = datasets[monthKey];
+      const heat = ds.points.map(p => [p.x - 1, p.y - 1, p.value]);
+      const points = buildPoints(ds);
 
       return {
-        meta, months, labels,
-        month: months[0],
-        slider: 0,
-        init() {
-          chart = echarts.init(document.getElementById('chart'), null, { renderer: 'canvas' });
-          this.update();
-          window.addEventListener('resize', () => chart.resize());
+        backgroundColor: "#0b0e11",
+
+        tooltip: {
+          trigger: "item",
+          formatter: params => {
+            const v = params.value;
+            const z = Number(v[2]);
+            const g = Number(v[3]);
+
+            let lines = [
+              `${labels.x}: ${v[0] + 1}`,
+              `${labels.y}: ${v[1] + 1}`,
+              z < 0 ? "no data" : `${labels.value}: ${z}`,
+              `${labels.size}: ${g}`
+            ];
+
+            const e = params.data.extras || {};
+            for (const k of labels.extras) {
+              if (e[k] !== null && e[k] !== undefined && e[k] !== "")
+                lines.push(`${k}: ${e[k]}`);
+            }
+
+            return lines.join("<br/>");
+          }
         },
-        update() {
-          const idx = this.months.indexOf(this.month);
-          this.slider = (idx >= 0 ? idx : 0);
-          chart.setOption(buildOption(this.month), false);
+
+        grid: { left: 50, right: 20, top: 40, bottom: 40, containLabel: true },
+
+        xAxis: {
+          type: "category",
+          data: categories(meta.x_max),
+          name: labels.x,
+          nameTextStyle: { color: "#9aa4ad" },
+          axisLine: { lineStyle: { color: "#6b7782" } },
+          axisLabel: { color: "#cbd5dc" },
+          splitLine: { show: true, lineStyle: { color: "#ffffff", width: 1.5 } },
+          splitArea: { show: false }
         },
-        prev() { const i = Math.max(0, this.slider - 1); this.slider = i; this.month = this.months[i]; this.update(); },
-        next() { const i = Math.min(this.months.length - 1, this.slider + 1); this.slider = i; this.month = this.months[i]; this.update(); }
+
+        yAxis: {
+          type: "category",
+          data: categories(meta.y_max),
+          name: labels.y,
+          nameTextStyle: { color: "#9aa4ad" },
+          axisLine: { lineStyle: { color: "#6b7782" } },
+          axisLabel: { color: "#cbd5dc" },
+          splitLine: { show: true, lineStyle: { color: "#ffffff", width: 1.5 } },
+          splitArea: { show: false }
+        },
+
+        visualMap: [{
+          type: "continuous",
+          min: meta.value_min_pos,
+          max: meta.value_max,
+          show: false,
+          inRange: { color: meta.grad_colors }
+        }],
+
+        series: [
+          {
+            type: "heatmap",
+            data: heat,
+            itemStyle: {
+              borderWidth: 1,
+              borderColor: "#2c343b"
+            }
+          },
+          {
+            type: "scatter",
+            data: points,
+            symbolSize: val => {
+              const t = (val[3] - meta.size_min) / (meta.size_max - meta.size_min || 1);
+              return Math.max(6, Math.min(28, 6 + t * 22));
+            },
+            itemStyle: {
+              borderColor: "#000",
+              borderWidth: 0.8
+            },
+            encode: { x: 0, y: 1 }
+          }
+        ]
       };
     }
-  </script>
-</body>
 
+    return {
+      meta, months, labels,
+      month: months[0],
+      slider: 0,
+
+      async init() {
+        await loadData();
+        window.chart = echarts.init(document.getElementById("chart"));
+        this.update();
+        window.addEventListener("resize", () => window.chart.resize());
+      },
+
+      update() {
+        this.slider = this.months.indexOf(this.month);
+        window.chart.setOption(buildOption(this.month), true);
+      },
+
+      prev() {
+        this.slider = Math.max(0, this.slider - 1);
+        this.month = this.months[this.slider];
+        this.update();
+      },
+
+      next() {
+        this.slider = Math.min(this.months.length - 1, this.slider + 1);
+        this.month = this.months[this.slider];
+        this.update();
+      },
+
+      exportPNG() {
+        console.log("Export button clicked");
+        if (!window.chart) {
+          console.error("Chart not initialized");
+          return;
+        }
+        try {
+          const url = window.chart.getDataURL({
+            type: "png",
+            pixelRatio: 2,
+            backgroundColor: "#ffffff"
+          });
+          console.log("Generated URL:", url);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `grovegrid-${this.month}.png`;
+          a.click();
+          console.log("Download triggered");
+        } catch (error) {
+          console.error("Export failed:", error);
+        }
+      }
+    };
+  }
+</script>
+</body>
 </html>
