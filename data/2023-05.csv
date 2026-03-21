@@ -130,7 +130,7 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 4;12;2;10;Y;;;;new shoots
 4;13;2;10;Y;;;;new shoots
 4;14;3;10;Y;;;;
-4;15;;10;;;;;Old stock, Yvyra pyta
+4;15;;10;?;;;;Old stock, Yvyra pyta
 4;16;3;10;Y;;;;
 4;17;0;10;P;;;;
 4;18;3;10;Cu;;;!;
@@ -696,8 +696,8 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 19;14;3;10;Y;;;;
 19;15;3;10;Y;;;;
 19;16;3;10;Y;;;;
-19;17;3;10;y;;;;
-19;18;3;10;y;;;;
+19;17;3;10;Y;;;;
+19;18;3;10;Y;;;;
 19;19;3;10;L;;;;
 19;20;2;15;Y;;;;bare, leaves dry
 19;21;3;10;Y;;;;
@@ -858,7 +858,7 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 23;29;3;10;G;x;;!;
 23;30;3;10;L;;;;
 23;31;3;10;Y;;;;
-23;32;;10;;;;;Old stock, Yvyra pyta
+23;32;;10;?;;;;Old stock, Yvyra pyta
 23;33;3;10;Y;;;;
 23;34;3;10;Y;;;;
 23;35;3;10;Y;;;;
@@ -968,7 +968,7 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 26;30;3;10;L;;;!;
 26;31;3;10;G;;;;
 26;32;3;10;Cu;;;;Tip off, recovering
-26;33;;10;;;;;Large tree, was already there
+26;33;;10;?;;;;Large tree, was already there
 26;34;3;10;G;;;;
 26;35;4;10;L;;;;
 26;36;3;10;Y;;;;
@@ -1036,7 +1036,7 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 28;26;2;10;P;;;;dry, probably dead
 28;27;3;10;L;;;;Leaves with brown spots and edges
 28;28;3;10;L;x;;;Leaves with brown spots and edges, partially curled
-28;29;;10;;;;!;Old stock Curupa'y
+28;29;;10;?;;;!;Old stock Curupa'y
 28;30;2;10;L;;;;Leaves with brown spots and edges, partially curled
 28;31;3;10;G;x;;;
 28;32;3;10;G;x;;;
@@ -1098,7 +1098,7 @@ row;position;condition;heigth;species;ants;locusts;stick;notes
 30;19;3;10;Cu;;;!;
 30;20;3;10;Cu;;;;
 30;21;3;10;Cu;;;;
-30;22;;10;;;;;Old stock, Yvyra pyta
+30;22;;10;?;;;;Old stock, Yvyra pyta
 30;23;2;10;Cu;;;;New leaves at base
 30;24;3;10;Cu;;;;
 30;25;3;10;G;x;;!;

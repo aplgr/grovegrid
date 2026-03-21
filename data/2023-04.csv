@@ -696,8 +696,8 @@ row;position;condition;height;species;ants;locusts;notes
 19;14;3;10;Y;;;
 19;15;3;10;Y;;;
 19;16;3;10;Y;;;
-19;17;3;10;y;;;
-19;18;3;10;y;;;
+19;17;3;10;Y;;;
+19;18;3;10;Y;;;
 19;19;3;10;L;;;
 19;20;2;10;Y;;;
 19;21;3;10;Y;;;
@@ -967,7 +967,7 @@ row;position;condition;height;species;ants;locusts;notes
 26;30;3;10;L;;;
 26;31;3;10;G;;;
 26;32;2;10;Cu;;;Tip off
-26;33;3;10;;;;Large tree, was already there
+26;33;3;10;?;;;Large tree, was already there
 26;34;3;10;G;;;
 26;35;3;10;L;;;
 26;36;3;10;Y;;;
