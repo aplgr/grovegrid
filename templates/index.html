@@ -6,11 +6,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{TITLE}}</title>
   <style>
+    :root {
+      --bg: #0b0e11;
+      --panel: #12161b;
+      --panel-2: #171c22;
+      --line: #1f252b;
+      --line-2: #2c343b;
+      --text: #eaeaea;
+      --muted: #9aa4ad;
+      --species-bar: #4f7cff;
+      --size-bar: #5f9f5f;
+    }
+
+    [x-cloak] {
+      display: none !important;
+    }
+
     body {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       margin: 0;
-      background: #0b0e11;
-      color: #eaeaea;
+      background: var(--bg);
+      color: var(--text);
     }
 
     header {
@@ -19,6 +35,8 @@
       display: flex;
       gap: 12px;
       align-items: center;
+      position: relative;
+      z-index: 2;
     }
 
     .title {
@@ -31,13 +49,15 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     select,
     input[type="range"] {
-      background: #12161b;
-      color: #eaeaea;
-      border: 1px solid #1f252b;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
       border-radius: 8px;
       padding: 6px 8px;
     }
@@ -48,6 +68,7 @@
       align-items: center;
       font-size: 12px;
       opacity: .9;
+      flex-wrap: wrap;
     }
 
     .swatch {
@@ -56,6 +77,7 @@
       display: inline-block;
       border-radius: 3px;
       border: 1px solid #111;
+      flex: 0 0 auto;
     }
 
     .grad {
@@ -77,27 +99,245 @@
       right: 14px;
       font-size: 12px;
       opacity: .6;
+      z-index: 1;
     }
 
     button {
-      background: #12161b;
-      color: #eaeaea;
-      border: 1px solid #1f252b;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
       border-radius: 8px;
       padding: 6px 10px;
       cursor: pointer;
     }
 
     button:hover {
-      border-color: #2c343b;
+      border-color: var(--line-2);
+    }
+
+    .stats-button {
+      min-width: 72px;
+    }
+
+    .stats-button.active {
+      border-color: #506070;
+      background: var(--panel-2);
+    }
+
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .35);
+      z-index: 9;
+    }
+
+    .stats-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(420px, 92vw);
+      height: 100vh;
+      background: rgba(18, 22, 27, .98);
+      border-left: 1px solid var(--line);
+      box-shadow: -16px 0 40px rgba(0, 0, 0, .35);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+
+    .stats-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stats-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .stats-subtitle {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .stats-body {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 14px 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .stats-summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+
+    .summary-card {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .summary-value {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .stats-section {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+
+    .stats-section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stats-section-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .stats-section-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .stats-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stats-row {
+      padding: 12px 14px;
+      border-top: 1px solid rgba(255, 255, 255, .04);
+    }
+
+    .stats-row:first-child {
+      border-top: 0;
+    }
+
+    .stats-row-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .stat-key {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+    }
+
+    .stat-key-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .stat-meta {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .stat-bar {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, .08);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .stat-bar-fill {
+      height: 100%;
+      min-width: 2px;
+      border-radius: 999px;
+    }
+
+    .empty-state {
+      padding: 16px 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .close-button {
+      flex: 0 0 auto;
+    }
+
+    @media (max-width: 960px) {
+      header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .controls {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      #chart {
+        height: calc(100vh - 116px);
+      }
+    }
+
+    @media (max-height: 820px) {
+      .stats-header {
+        padding: 14px 16px;
+      }
+
+      .stats-title {
+        font-size: 17px;
+      }
+
+      .stats-subtitle {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
 
-<body x-data="heatmapApp()">
+<body x-data="heatmapApp()" @keydown.escape.window="closeStats()">
   <header>
     <div class="title">{{TITLE}}</div>
-
     <div class="legend" x-data x-init="(()=>{
       // gradient colors are dynamic; we set them in JS later
     })()">
@@ -105,7 +345,6 @@
       <span class="swatch" style="background:#555"></span> <span>0</span>
       <span class="grad" id="legend-grad"></span> <span id="legend-value">value ↑</span>
     </div>
-
     <div class="controls">
       <button @click="prev()">⟨</button>
       <select x-model="month" @change="update()">
@@ -114,20 +353,124 @@
         </template>
       </select>
       <button @click="next()">⟩</button>
-
       <input type="range" :min="0" :max="months.length-1" step="1" x-model.number="slider"
-        @input="month = months[slider]; update()" style="width:220px">
+             @input="month = months[slider]; update()" style="width:220px">
+      <button class="stats-button" :class="{ 'active': statsOpen }" @click="toggleStats()">Stats</button>
     </div>
   </header>
-
   <div id="chart"></div>
   <div class="footer" x-text="`${labels.size}: ${meta.size_min} – ${meta.size_max} | ${labels.value}`"></div>
-
+  <div class="drawer-backdrop" x-cloak x-show="statsOpen" x-transition.opacity.duration.150ms @click="closeStats()">
+  </div>
+  <aside class="stats-drawer" x-cloak x-show="statsOpen" x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100"
+         x-transition:leave="transition ease-in duration-150" x-transition:leave-start="translate-x-0 opacity-100"
+         x-transition:leave-end="translate-x-full opacity-0">
+    <div class="stats-header">
+      <div>
+        <h2 class="stats-title">Snapshot stats</h2>
+        <p class="stats-subtitle"> Current slice: <strong x-text="month"></strong><br> Distribution of species, size and
+          condition for the active snapshot. </p>
+      </div>
+      <button class="close-button" @click="closeStats()">✕</button>
+    </div>
+    <div class="stats-body">
+      <div class="stats-summary">
+        <div class="summary-card">
+          <div class="summary-label">Trees in snapshot</div>
+          <div class="summary-value" x-text="stats.total"></div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-label">Species field</div>
+          <div class="summary-value" style="font-size:14px; line-height:1.3; font-weight:600;"
+               x-text="stats.speciesField || 'species'"></div>
+        </div>
+      </div>
+      <section class="stats-section">
+        <div class="stats-section-head">
+          <h3 class="stats-section-title">Species</h3>
+          <div class="stats-section-note">Exact grouping by species code</div>
+        </div>
+        <div class="stats-list" x-show="stats.species.length > 0">
+          <template x-for="item in stats.species" :key="`species-${item.key}`">
+            <div class="stats-row">
+              <div class="stats-row-top">
+                <div class="stat-key">
+                  <span class="stat-key-text" x-text="item.key"></span>
+                </div>
+                <div class="stat-meta">
+                  <span x-text="item.count"></span>
+                  <span> · </span>
+                  <span x-text="formatPercent(item.percent)"></span>
+                </div>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-bar-fill" :style="barStyle('species', item)"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="empty-state" x-show="stats.species.length === 0">No species data available for this snapshot.</div>
+      </section>
+      <section class="stats-section">
+        <div class="stats-section-head">
+          <h3 class="stats-section-title">Size</h3>
+          <div class="stats-section-note">Exact grouping by integer size value</div>
+        </div>
+        <div class="stats-list" x-show="stats.size.length > 0">
+          <template x-for="item in stats.size" :key="`size-${item.key}`">
+            <div class="stats-row">
+              <div class="stats-row-top">
+                <div class="stat-key">
+                  <span class="stat-key-text" x-text="item.key"></span>
+                </div>
+                <div class="stat-meta">
+                  <span x-text="item.count"></span>
+                  <span> · </span>
+                  <span x-text="formatPercent(item.percent)"></span>
+                </div>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-bar-fill" :style="barStyle('size', item)"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="empty-state" x-show="stats.size.length === 0">No size data available for this snapshot.</div>
+      </section>
+      <section class="stats-section">
+        <div class="stats-section-head">
+          <h3 class="stats-section-title">Condition</h3>
+          <div class="stats-section-note">Uses the same color mapping as the heatmap</div>
+        </div>
+        <div class="stats-list" x-show="stats.condition.length > 0">
+          <template x-for="item in stats.condition" :key="`condition-${item.key}`">
+            <div class="stats-row">
+              <div class="stats-row-top">
+                <div class="stat-key">
+                  <span class="swatch" :style="`background:${item.color}`"></span>
+                  <span class="stat-key-text" x-text="conditionLabel(item.key)"></span>
+                </div>
+                <div class="stat-meta">
+                  <span x-text="item.count"></span>
+                  <span> · </span>
+                  <span x-text="formatPercent(item.percent)"></span>
+                </div>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-bar-fill" :style="barStyle('condition', item)"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="empty-state" x-show="stats.condition.length === 0">No condition data available for this snapshot.
+        </div>
+      </section>
+    </div>
+  </aside>
   <script id="payload" type="application/json">{{INLINE_JSON}}</script>
-
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-
   <script>
     function heatmapApp() {
       const inline = JSON.parse(document.getElementById('payload').textContent);
@@ -192,6 +535,99 @@
           }
         }
         return pieces;
+      }
+
+      function normalizeFieldName(value) {
+        return String(value || '')
+          .trim()
+          .toLowerCase()
+          .replace(/ä/g, 'ae')
+          .replace(/ö/g, 'oe')
+          .replace(/ü/g, 'ue')
+          .replace(/ß/g, 'ss')
+          .replace(/[^a-z0-9]+/g, '');
+      }
+
+      function findExtraField(candidates) {
+        const wanted = candidates.map(normalizeFieldName);
+        for (const field of (labels.extras || [])) {
+          const norm = normalizeFieldName(field);
+          if (wanted.includes(norm)) return field;
+        }
+        return (labels.extras || [])[0] || '';
+      }
+
+      const speciesField = findExtraField(['species', 'art', 'baumart']);
+
+      function getConditionColor(value) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return meta.nodata_color || '#222222';
+
+        const zeroColor = meta.zero_color || '#555555';
+        const grad = Array.isArray(meta.grad_colors) ? meta.grad_colors : [];
+
+        const conditionColors = {
+          0: zeroColor,
+          1: grad[0] || '#d73027',
+          2: grad[1] || '#fdae61',
+          3: grad[3] || grad[2] || '#a6d96a',
+          4: grad[4] || grad[3] || '#1a9850'
+        };
+
+        return conditionColors[num] || meta.nodata_color || '#222222';
+      }
+
+      function increment(map, key) {
+        const current = map.get(key) || 0;
+        map.set(key, current + 1);
+      }
+
+      function toPercent(count, total) {
+        if (!total) return 0;
+        return (count / total) * 100;
+      }
+
+      function mapToRows(map, total, sorter) {
+        return Array.from(map.entries())
+          .map(([key, count]) => ({ key, count, percent: toPercent(count, total) }))
+          .sort(sorter);
+      }
+
+      function computeStats(ds) {
+        const points = Array.isArray(ds?.points) ? ds.points : [];
+        const total = points.length;
+        const speciesMap = new Map();
+        const sizeMap = new Map();
+        const conditionMap = new Map();
+
+        for (const point of points) {
+          const extras = point.extras || {};
+          const speciesValue = String(extras?.[speciesField] ?? '').trim() || '(empty)';
+          increment(speciesMap, speciesValue);
+
+          const sizeValue = Number(point.size);
+          if (Number.isFinite(sizeValue)) {
+            increment(sizeMap, String(Math.round(sizeValue)));
+          }
+
+          const conditionValue = Number(point.value);
+          if (Number.isFinite(conditionValue) && conditionValue >= 0) {
+            increment(conditionMap, String(Math.round(conditionValue)));
+          }
+        }
+
+        const species = mapToRows(speciesMap, total, (a, b) => b.count - a.count || a.key.localeCompare(b.key));
+        const size = mapToRows(sizeMap, total, (a, b) => Number(b.key) - Number(a.key) || b.count - a.count);
+        const condition = mapToRows(conditionMap, total, (a, b) => Number(b.key) - Number(a.key))
+          .map(item => ({ ...item, color: getConditionColor(Number(item.key)) }));
+
+        return {
+          total,
+          speciesField,
+          species,
+          size,
+          condition
+        };
       }
 
       function buildOption(monthKey) {
@@ -299,9 +735,13 @@
       }
 
       return {
-        meta, months, labels,
+        meta,
+        months,
+        labels,
         month: months[0],
         slider: 0,
+        statsOpen: false,
+        stats: { total: 0, speciesField, species: [], size: [], condition: [] },
         init() {
           chart = echarts.init(document.getElementById('chart'), null, { renderer: 'canvas' });
           this.update();
@@ -311,9 +751,39 @@
           const idx = this.months.indexOf(this.month);
           this.slider = (idx >= 0 ? idx : 0);
           chart.setOption(buildOption(this.month), false);
+          this.stats = computeStats(datasets[this.month] || { points: [] });
         },
-        prev() { const i = Math.max(0, this.slider - 1); this.slider = i; this.month = this.months[i]; this.update(); },
-        next() { const i = Math.min(this.months.length - 1, this.slider + 1); this.slider = i; this.month = this.months[i]; this.update(); }
+        prev() {
+          const i = Math.max(0, this.slider - 1);
+          this.slider = i;
+          this.month = this.months[i];
+          this.update();
+        },
+        next() {
+          const i = Math.min(this.months.length - 1, this.slider + 1);
+          this.slider = i;
+          this.month = this.months[i];
+          this.update();
+        },
+        toggleStats() {
+          this.statsOpen = !this.statsOpen;
+        },
+        closeStats() {
+          this.statsOpen = false;
+        },
+        formatPercent(value) {
+          const v = Number(value) || 0;
+          return `${v >= 10 ? v.toFixed(0) : v.toFixed(1)}%`;
+        },
+        conditionLabel(value) {
+          return `Level ${value}`;
+        },
+        barStyle(type, item) {
+          let color = 'var(--species-bar)';
+          if (type === 'size') color = 'var(--size-bar)';
+          if (type === 'condition') color = item.color || (meta.zero_color || '#555555');
+          return `width:${Math.max(0, Math.min(100, Number(item.percent) || 0))}%;background:${color}`;
+        }
       };
     }
   </script>
