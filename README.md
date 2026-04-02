@@ -6,6 +6,7 @@
 ![Scope](https://img.shields.io/badge/scope-personal%20tool-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+[![Tests](https://github.com/aplgr/grovegrid/actions/workflows/test.yml/badge.svg)](https://github.com/aplgr/
 [![Go Reference](https://pkg.go.dev/badge/github.com/aplgr/grovegrid.svg)](https://pkg.go.dev/github.com/aplgr/grovegrid)
 [![Go Report Card](https://goreportcard.com/badge/github.com/aplgr/grovegrid)](https://goreportcard.com/report/github.com/aplgr/grovegrid)
 [![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?logo=go)](#)
