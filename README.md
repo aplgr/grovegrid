@@ -79,6 +79,15 @@ row;position;condition;height;species;notes
 | `-title` | `GroveGrid` | Page title for the generated HTML                      |
 | `-json-out` | *(empty)* | If set, also writes the raw data as JSON to this path |
 
+## Development
+
+```bash
+go test ./...
+npm install
+npm run vendor:sync
+```
+
+After Dependabot updates, run the local tests. For JavaScript updates, also regenerate the HTML and briefly check the output in a browser.
 
 ## License
 

@@ -19,6 +19,11 @@ import (
 // templatesRoot points to the ./templates folder next to the executable or repo root.
 var templatesRoot string
 
+const (
+	alpineVendorPath  = "internal/web/vendor/alpinejs/cdn.min.js"
+	echartsVendorPath = "internal/web/vendor/echarts/echarts.min.js"
+)
+
 func init() {
 	// Try to locate ./templates relative to the executable for "go run" and built binaries
 	exe, err := os.Executable()
@@ -257,10 +262,26 @@ func main() {
 	}
 
 	// write index.html
-	tmplBytes, _ := os.ReadFile(filepath.Join(templatesRoot, "index.html"))
+	tmplBytes, err := os.ReadFile(filepath.Join(templatesRoot, "index.html"))
+	if err != nil {
+		panic(err)
+	}
+	alpineJS, err := readProjectFile(alpineVendorPath)
+	if err != nil {
+		panic(err)
+	}
+	echartsJS, err := readProjectFile(echartsVendorPath)
+	if err != nil {
+		panic(err)
+	}
 	html := strings.ReplaceAll(string(tmplBytes), "{{TITLE}}", escapeHTML(*title))
-	bb, _ := json.MarshalIndent(out, "", "  ")
+	bb, err := json.MarshalIndent(out, "", "  ")
+	if err != nil {
+		panic(err)
+	}
 	html = strings.ReplaceAll(html, "{{INLINE_JSON}}", string(bb))
+	html = strings.ReplaceAll(html, "{{ECHARTS_JS}}", inlineScriptContent(echartsJS))
+	html = strings.ReplaceAll(html, "{{ALPINE_JS}}", inlineScriptContent(alpineJS))
 	if err := os.WriteFile(filepath.Join(*outDir, "index.html"), []byte(html), 0o644); err != nil {
 		panic(err)
 	}
@@ -369,4 +390,39 @@ func atofSmart(s string, re *regexp.Regexp) float64 {
 func escapeHTML(s string) string {
 	r := strings.NewReplacer("&", "&amp;", "<", "&lt;", ">", "&gt;", "\"", "&quot;")
 	return r.Replace(s)
+}
+
+func readProjectFile(rel string) ([]byte, error) {
+	candidates := []string{}
+	if templatesRoot != "" {
+		candidates = append(candidates, filepath.Join(filepath.Dir(templatesRoot), rel))
+	}
+	if exe, err := os.Executable(); err == nil {
+		candidates = append(candidates, filepath.Join(filepath.Dir(exe), rel))
+	}
+	if cwd, err := os.Getwd(); err == nil {
+		candidates = append(candidates, filepath.Join(cwd, rel))
+	}
+	candidates = append(candidates, rel)
+
+	seen := map[string]bool{}
+	tried := []string{}
+	for _, candidate := range candidates {
+		candidate = filepath.Clean(candidate)
+		if seen[candidate] {
+			continue
+		}
+		seen[candidate] = true
+		tried = append(tried, candidate)
+		if b, err := os.ReadFile(candidate); err == nil {
+			return b, nil
+		}
+	}
+
+	return nil, fmt.Errorf("could not read %s; run `npm install && npm run vendor:sync` (tried: %s)", rel, strings.Join(tried, ", "))
+}
+
+func inlineScriptContent(b []byte) string {
+	r := strings.NewReplacer("</script", "<\\/script", "</SCRIPT", "<\\/SCRIPT")
+	return r.Replace(string(b))
 }

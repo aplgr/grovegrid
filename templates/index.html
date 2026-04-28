@@ -475,8 +475,7 @@
     </div>
   </aside>
   <script id="payload" type="application/json">{{INLINE_JSON}}</script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script>{{ECHARTS_JS}}</script>
   <script>
     function heatmapApp() {
       const inline = JSON.parse(document.getElementById('payload').textContent);
@@ -858,6 +857,7 @@
       };
     }
   </script>
+  <script>{{ALPINE_JS}}</script>
 </body>
 
 </html>

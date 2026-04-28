@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor:sync": "node scripts/sync-vendor-assets.mjs"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.11",
+    "echarts": "^5.6.0"
+  }
+}
