@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "alpinejs": "^3.15.11",
-    "echarts": "^5.6.0"
+    "echarts": "^6.0.0"
   }
 }
